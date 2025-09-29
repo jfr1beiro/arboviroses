@@ -1,0 +1,1054 @@
+APRESENTAÇÃO ARBOVIROSES - CONTEÚDO ESTRUTURADO
+============================================================
+
+SLIDE 2: O QUE SÃO ARBOVIROSES
+--------------------------------------------------
+DESTAQUES:
+  ⚠️ ARBOVÍRUS = ARthropodBOrne VIRUS Vírus transmitidos por artrópodes
+
+FONTE: Fontes: Weaver  Reisen, 2010. Annu Rev Entomol; Gould et al., 2017. Lancet
+
+============================================================
+
+SLIDE 3: CLASSIFICAÇÃO TAXONÔMICA
+--------------------------------------------------
+TÓPICO 1: FLAVIVIRIDAE
+
+TÓPICO 2: TOGAVIRIDAE
+
+TÓPICO 3: PERIBUNYAVIRIDAE
+
+TÓPICO 4: PHENUIVIRIDAE
+
+DESTAQUES:
+  ⚠️ 134 ESPÉCIES AFETAM HUMANOS GLOBALMENTE
+
+FONTE: Fontes: Calisher et al., 1989. Am J Trop Med Hyg; ICTV Master Species List 2023
+
+============================================================
+
+SLIDE 4: CENÁRIO EPIDEMIOLÓGICO GLOBAL 2024
+--------------------------------------------------
+DESTAQUES:
+  ⚠️ DADOS OMS (JanAbr 2024) 76M Casos reportados
+
+FONTE: Fontes: WHO Weekly Epidemiological Record, 2024; PAHO Health Information Platform
+
+============================================================
+
+SLIDE 5: PANORAMA BRASIL 2025 SE 01-04
+--------------------------------------------------
+TÓPICO 1: FEBRE AMARELA
+
+DESTAQUES:
+  ⚠️ DENGUE 139.241 casos (686/100 mil hab.) 21 óbitos confirmados 160 em investigação Estados críticos: Acre São Paulo Mato Grosso Sorotipos: DENV1 DENV2 DENV3 (aumento)
+  ⚠️ OROPOUCHE 2.791 casos (↑74% vs 2024) Primeiras mortes mundiais registradas ES (95%) RJ (99) MG (30 casos)
+
+FONTE: Fontes: Brasil. MS. CIEVS. Boletim COE Arboviroses SE 04/2025; SIVEPDDA
+
+============================================================
+
+SLIDE 6: POR QUE EMERGÊNCIA GLOBAL
+--------------------------------------------------
+TÓPICO 1: MUDANÇAS CLIMÁTICAS
+  • +11°C temperatura global (18802020)
+  • Expansão zona tropical 25° latitude
+
+TÓPICO 2: URBANIZAÇÃO DESCONTROLADA
+  • 68% população urbana até 2050
+  • +300% criadouros artificiais
+
+TÓPICO 3: ADAPTAÇÃO VETORIAL
+  • 60% populações resistentes
+  • Expansão geográfica
+
+TÓPICO 4: GLOBALIZAÇÃO
+  • Dispersão intercontinental
+  • Viagens internacionais
+
+TÓPICO 5: EVOLUÇÃO VIRAL
+  • Novas cepas virulentas
+  • Escape imunológico
+
+DESTAQUES:
+  ⚠️ CONVERGÊNCIA = EXPLOSÃO EPIDÊMICA
+
+FONTE: Fontes: Ryan et al., 2019. Nature Rev Microbiol; IPCC AR6 Climate Report, 2023
+
+============================================================
+
+SLIDE 7: FOCO: O PRINCIPAL VETOR
+--------------------------------------------------
+APRESENTADOR: Transição para ALUNO 2
+
+DESTAQUES:
+  ⚠️ AEDES AEGYPTI O mosquito mais eficaz do mundo
+
+FONTE: Fontes: Powell  Tabachnick, 2013. Trends Parasitol; Kraemer et al., 2015. eLife
+
+============================================================
+
+SLIDE 8: AEDES AEGYPTI: ANÁLISE MORFOLÓGICA
+--------------------------------------------------
+APRESENTADOR: ALUNO 2 - Aedes aegypti: Análise Vetorial
+                Duração: 2:30 - 5:00
+
+TÓPICO 1: CARACTERÍSTICAS FÍSICAS
+  • Tamanho: 47mm (menor que moeda 1 real)
+  • Peso: 23mg
+  • Volume sangue/repasto: 25μL
+  • Raio de voo: 100200m típico
+
+TÓPICO 2: IDENTIFICAÇÃO DIAGNÓSTICA
+  • Listras brancoprateadas (patas + tórax)
+  • Probóscide serrilhada
+  • Palpos curtos () vs longos (Anopheles)
+  • Asas transparentes sem manchas
+  • Abdome: distensão 3x para sangue
+
+DESTAQUES:
+  ⚠️ COMPETÊNCIA ÚNICA: 4 vírus simultâneos
+
+FONTE: Fontes: Consoli  LourençodeOliveira, 1994. Principais mosquitos; Christophers, 1960. Aedes aegypti
+
+============================================================
+
+SLIDE 9: BIOECOLOGIA: PADRÕES COMPORTAMENTAIS
+--------------------------------------------------
+TÓPICO 1: ATIVIDADE CIRCADIANA
+  • 06h10h: Pico matinal (máxima atividade)
+  • 10h15h: Repouso diurno
+  • 15h19h: Pico vespertino
+  • Noturno: Inativo ( Anopheles)
+
+TÓPICO 2: PREFERÊNCIAS AMBIENTAIS
+  • ENDOFILIA: Interior das residências
+  • ANTROPOFILIA: 95% preferência sangue humano
+  • TERMOFILIA: Zona ótima 2530°C
+  • HIGROFILIA: Umidade >60%
+
+TÓPICO 3: DIMORFISMO SEXUAL
+  • Fêmeas: Hematófagas (proteínas → ovos)
+  • Machos: Nectarívoros (carboidratos → energia)
+
+FONTE: Fontes: Scott et al., 2006. PLoS Med; Takken  Verhulst, 2013. Annu Rev Entomol
+
+============================================================
+
+SLIDE 10: CICLO BIOLÓGICO: METAMORFOSE COMPLETA
+--------------------------------------------------
+TÓPICO 1: 1 OVO 1-2 dias
+  • Resistência: até 450 dias sem água
+  • Postura: 50150 ovos/ciclo
+  • Local: superfícies próximas à água
+
+TÓPICO 2: 2 LARVA 3-5 dias
+  • 4 estádios de desenvolvimento
+  • Alimentação: filtradora (detritos bactérias)
+  • Respiração: sifão superficial
+  • Desenvolvimento: temperatura dependente
+
+TÓPICO 3: 3 PUPA 1-2 dias
+  • Não se alimenta
+  • Apenas respiração e metamorfose
+  • Natação limitada (escape predadores)
+
+TÓPICO 4: 4 ADULTO
+  • : 3045 dias
+  • : 1520 dias
+  • Maturação sexual: 23 dias
+  • Ciclo gonotrófico: 23 dias
+  • Dispersão ativa: até 800m
+
+DESTAQUES:
+  ⚠️ CRÍTICO: Todos os estágios aquáticos obrigatórios
+  ⚠️ DURAÇÃO TOTAL: 710 dias (condições ótimas)
+
+FONTE: Fontes: Forattini, 2002. Culicidologia Médica; Yang et al., 2009. PLoS Negl Trop Dis
+
+============================================================
+
+SLIDE 11: CRIADOUROS: ANÁLISE QUANTITATIVA
+--------------------------------------------------
+DESTAQUES:
+  ⚠️ PARÂMETROS CRÍTICOS Volume mínimo: 1mL água pH ótimo: 6585 Temperatura: 2035°C Distância casas: Água limpa preferencial
+  ⚠️ DISTRIBUIÇÃO NACIONAL: 3.587 municípios com Aedes (89% do Brasil)
+
+FONTE: Fontes: Brasil. MS. LIRAa 2023; Honório et al., 2003. Mem Inst Oswaldo Cruz
+
+============================================================
+
+SLIDE 12: COMPETÊNCIA VETORIAL: BASE MOLECULAR
+--------------------------------------------------
+TÓPICO 1: DIA 0: INFECÇÃO INICIAL
+  • Ingestão sangue virêmico (>10⁵ cópias/mL)
+  • Vírus infecta epitélio intestinal
+
+TÓPICO 2: DIAS 1-7: REPLICAÇÃO INTESTINAL
+  • Multiplicação no intestino médio
+  • Superação barreira intestinal
+  • Disseminação para hemocele
+
+TÓPICO 3: DIAS 7-12: DISSEMINAÇÃO SISTÊMICA
+  • Migração para glândulas salivares
+  • Superação barreira salivar
+  • Replicação nos acini glandulares
+
+TÓPICO 4: DIAS 12-45: TRANSMISSÃO ATIVA
+  • Vírus viável na saliva (10³10⁴ partículas/picada)
+  • Competência vitalícia
+  • Transmissão a cada repasto
+
+DESTAQUES:
+  ⚠️ FATOR CRÍTICO: 1°C ↑ = 23 dias período
+
+FONTE: Fontes: Franz et al., 2015. PLoS Negl Trop Dis; Tesla et al., 2018. Proc R Soc B
+
+============================================================
+
+SLIDE 13: RESISTÊNCIA: PROBLEMA CRESCENTE
+--------------------------------------------------
+TÓPICO 1: MECANISMOS MOLECULARES
+  • Mutações genesalvo (kdr ace1)
+  • Enzimas detoxificantes ↑
+  • Resistência comportamental
+  • Resistência cuticular
+
+TÓPICO 2: IMPACTO ECONÔMICO
+  • Doses maiores necessárias
+  • Produtos mais caros
+  • Eficácia decrescente
+  • R 35 bilhões anuais Brasil
+
+TÓPICO 3: CONSEQUÊNCIAS
+  • Falha controle químico
+  • Surtos epidêmicos
+  • Necessidade métodos alternativos
+
+TÓPICO 4: ESTRATÉGIAS MANEJO
+  • Rotação inseticidas
+  • Monitoramento resistência
+  • Controle integrado
+
+DESTAQUES:
+  ⚠️ SITUAÇÃO ATUAL BRASIL 60% populações Aedes resistentes Resistência múltipla (organofosforados + piretróides) Expansão geográfica da resistência
+
+FONTE: Fontes: Macoris et al., 2018. PLoS Negl Trop Dis; Garcia et al., 2018. PLoS One
+
+============================================================
+
+SLIDE 14: FENÔMENO ÚNICO MUNDIAL
+--------------------------------------------------
+DESTAQUES:
+  ⚠️ COCIRCULAÇÃO VIRAL Diagnóstico diferencial complexo
+
+FONTE: Fontes: Vasilakis  Weaver, 2017. Curr Opin Virol; WilderSmith et al., 2017. Nature Rev Dis Primers
+
+============================================================
+
+SLIDE 15: DENGUE: PATOGÊNESE MOLECULAR
+--------------------------------------------------
+APRESENTADOR: ALUNO 3 - Doenças Específicas: Patogênese e Clínica
+                Duração: 5:00 - 7:30
+
+TÓPICO 1: CARACTERÍSTICAS VIRAIS
+  • Família: Flaviviridae
+  • Genoma: RNA (+) 11kb
+  • 4 sorotipos: DENV1 2 3 4
+  • Proteínas: 3 estruturais 7 nãoestruturais
+
+TÓPICO 2: TROPISMO CELULAR
+  • Alvos: Monócitos macrófagos células dendríticas
+  • Receptores: DCSIGN Hsp90 Hsp70
+  • Barreira: Endotélio vascular
+
+TÓPICO 3: MECANISMOS PATOGÊNICOS
+  • ADE (AntibodyDependent Enhancement)
+  • Tempestade de citocinas (TNFα IL6)
+  • NS1 solúvel → disfunção endotelial
+  • Coagulopatia de consumo
+  • Extravasamento plasmático
+
+DESTAQUES:
+  ⚠️ ADE CRÍTICO Infecção secundária = doença GRAVE
+
+FONTE: Fontes: Halstead, 1988. Science; Martina et al., 2009. PLoS Pathog
+
+============================================================
+
+SLIDE 16: DENGUE: CLASSIFICAÇÃO CLÍNICA OMS
+--------------------------------------------------
+TÓPICO 1: DENGUE SEM SINAIS ALARME 90
+  • Febre 3940°C (27 dias)
+  • Cefaleia intensa dor retroorbital
+  • Mialgia artralgia severas
+  • Exantema tardio prova laço (+)
+
+TÓPICO 2: DENGUE COM SINAIS ALARME 8
+  • Dor abdominal intensa
+  • Vômitos persistentes
+  • Sangramento mucosas
+  • Hepatomegalia >2cm
+  • Letargia/irritabilidade
+
+TÓPICO 3: DENGUE GRAVE 2
+  • Choque por extravasamento plasmático
+  • Sangramento grave (hematemese melena)
+  • Disfunção orgânica (hepatite miocardite)
+
+DESTAQUES:
+  ⚠️ BRASIL 2024: 82.908 casos graves (+3078%) MORTALIDADE: 0055% (manejo dependente)
+  ⚠️ DISTRIBUIÇÃO CASOS 90% SEM SINAIS ALARME | 8% COM ALARME | 2% GRAVE
+
+FONTE: Fontes: WHO, 2009. Dengue Guidelines; Brasil. MS. Boletim Epidemiológico 2024
+
+============================================================
+
+SLIDE 17: ZIKA: NEUROTROPISMO E TERATOGENIA
+--------------------------------------------------
+TÓPICO 1: CARACTERÍSTICAS VIRAIS
+
+TÓPICO 2: SÍNDROME CONGÊNITA ZIKA
+
+TÓPICO 3: RISCO GESTACIONAL
+
+TÓPICO 4: ADULTOS - COMPLICAÇÕES NEUROLÓGICAS
+
+DESTAQUES:
+  ⚠️ NEUROINVASÃO Barreira Hematoencefálica
+  ⚠️ TRANSMISSÃO SEXUAL: 6 MESES
+
+FONTE: Fontes: Musso et al., 2015. Eurosurveillance; Mlakar et al., 2016. NEJM
+
+============================================================
+
+SLIDE 18: CHIKUNGUNYA: AQUELE QUE SE CURVA
+--------------------------------------------------
+TÓPICO 1: FASE AGUDA 0-14 dias
+
+TÓPICO 2: FASE SUBAGUDA 15 dias - 3 meses
+
+TÓPICO 3: FASE CRÔNICA 3 meses
+
+DESTAQUES:
+  ⚠️ FATORES RISCO CRONIFICAÇÃO >40 anos
+  ⚠️ PATOGÊNESE ARTICULAR Tropismo: sinoviócitos
+
+FONTE: Fontes: Schilte et al., 2013. PLoS Negl Trop Dis; Couturier et al., 2012. PLoS One
+
+============================================================
+
+SLIDE 19: FEBRE AMARELA: CICLOS EPIDEMIOLÓGICOS
+--------------------------------------------------
+TÓPICO 1: CICLO SILVESTRE Atual
+  • Vetores: Haemagogus Sabethes
+  • Hospedeiros: Primatas nãohumanos
+  • Ambiente: Florestas matas ciliares
+  • Humanos: Hospedeiros acidentais
+  • Casos: Esporádicos ocupacionais
+
+TÓPICO 2: CICLO URBANO Eliminado 1942
+  • Vetor: Aedes aegypti exclusivo
+  • Hospedeiros: Humanos exclusivos
+  • Transmissão: Antroponótica
+  • Risco: Reintrodução possível
+
+DESTAQUES:
+  ⚠️ PROGNÓSTICO 85% recuperação na remissão 15% evolui toxêmica → 2050% mortalidade
+
+FONTE: Fontes: Monath, 2001. Vaccine; Vasconcelos, 2003. Rev Inst Med Trop SP
+
+============================================================
+
+SLIDE 20: OROPOUCHE: NOVA AMEAÇA EMERGENTE
+--------------------------------------------------
+TÓPICO 1: VETOR: Culicoides paraensis maruim
+  • Tamanho: 13mm (menor que Aedes)
+  • Atividade: Crepuscular
+  • Habitat: Áreas úmidas rurais
+
+TÓPICO 2: EXPANSÃO GEOGRÁFICA
+  • Espírito Santo: 95% casos brasileiros
+  • Rio de Janeiro: 99 casos
+  • Minas Gerais: 30 casos
+  • Interiorização preocupante
+
+TÓPICO 3: TRANSMISSÃO VERTICAL CONFIRMADA
+  • Microcefalia em recémnascidos
+  • Óbitos fetais documentados
+  • Risco similar ao Zika
+
+TÓPICO 4: CARACTERÍSTICAS
+  • Família: Peribunyaviridae
+  • Descoberta: 1960 (bichopreguiça)
+  • Sintomas: Similar dengue
+  • Evolução fatal: 45 dias
+
+DESTAQUES:
+  ⚠️ EPIDEMIOLOGIA 20242025 8.078 casos confirmados (Américas) 2.791 casos Brasil (↑74% vs 2024) PRIMEIRAS MORTES MUNDIAIS: 2 óbitos (BA)
+  ⚠️ MARCOS 2024: Primeira morte + transmissão vertical
+
+FONTE: Fontes: Brasil. MS. COE Nacional, 2024; RomeroAlvarez  Escobar, 2018. PLoS Negl Trop Dis
+
+============================================================
+
+SLIDE 21: DESAFIO DIAGNÓSTICO
+--------------------------------------------------
+DESTAQUES:
+  ⚠️ PROBLEMA: SINTOMAS SIMILARES 4 vírus + sintomas sobrepostos + reações cruzadas
+  ⚠️ Próxima seção: Métodos diagnósticos avançados
+
+FONTE: Fontes: Peeling et al., 2010. Nature Rev Microbiol; Guzman  Harris, 2015. Lancet
+
+============================================================
+
+SLIDE 22: DIAGNÓSTICO: ERA MOLECULAR
+--------------------------------------------------
+APRESENTADOR: ALUNO 4 - Diagnóstico e Epidemiologia Avançada
+                Duração: 7:30 - 10:00
+
+TÓPICO 1: RT-PCR TEMPO REAL Padrão Ouro
+  • Detecção: RNA viral (17 dias)
+  • Especificidade: >99%
+  • Quantificação: Carga viral (cópias/mL)
+  • Diferenciação: Sorotipos específicos
+
+TÓPICO 2: ANTÍGENO NS1 Dengue
+  • Proteína nãoestrutural solúvel
+  • Janela: 19 dias póssintomas
+  • Teste rápido: Disponível SUS
+  • Correlação: Viremia e gravidade
+
+TÓPICO 3: SOROLOGIA IgMIgG
+  • IgM: 590 dias (infecção recente)
+  • IgG: >90 dias (infecção passada)
+  • Limitação: Reações cruzadas flavivírus
+
+DESTAQUES:
+  ⚠️ DESAFIO: Cocirculação + sintomas similares = Diagnóstico diferencial complexo
+  ⚠️ INOVAÇÃO 2024 RTPCR Multiplex PAHO: Mayaro + Oropouche simultâneo
+
+FONTE: Fontes: PAHO/WHO RTPCR Protocols, 2019; Lanciotti et al., 1992. J Clin Microbiol
+
+============================================================
+
+SLIDE 23: VIGILÂNCIA EPIDEMIOLÓGICA: SISTEMAS INTEGRADOS
+--------------------------------------------------
+TÓPICO 1: SISTEMA NACIONAL SINAN
+  • Notificação compulsória imediata
+  • Investigação epidemiológica 24h
+  • Monitoramento surtos em tempo real
+  • Análise espacial (SIG)
+
+TÓPICO 2: VIGILÂNCIA GLOBAL OMS
+  • GOARN (Outbreak Alert Response)
+  • Critérios ESPII ativação
+  • Compartilhamento sequências virais
+
+TÓPICO 3: INDICADORES CHAVE
+  • Incidência por 100mil hab.
+  • Taxa mortalidade específica
+  • Índice infestação predial (IIP)
+  • Levantamento rápido índice Aedes (LIRAa)
+
+TÓPICO 4: INOVAÇÕES TECNOLÓGICAS
+  • Apps móveis notificação
+  • Inteligência artificial predição
+  • Sensoriamento remoto (satélites)
+  • Big data climático
+
+DESTAQUES:
+  ⚠️ META: Detecção surtos 72h + resposta 7 dias
+
+FONTE: Fontes: WHO International Health Regulations, 2005; PAHO PLISA Platform
+
+============================================================
+
+SLIDE 24: MODELAGEM MATEMÁTICA: PREVISÃO EPIDÊMICA
+--------------------------------------------------
+TÓPICO 1: VARIÁVEIS HUMANAS
+  • S: Susceptíveis (população naive)
+  • E: Expostos (incubação 47 dias)
+  • I: Infectivos (viremia 17 dias)
+  • R: Recuperados (imunes)
+
+TÓPICO 2: VARIÁVEIS VETORIAIS
+  • Sv: Mosquitos susceptíveis
+  • Ev: Mosquitos expostos
+  • Iv: Mosquitos infectivos
+  • Capacidade suporte (K)
+
+TÓPICO 3: FATORES CLIMÁTICOS
+  • Temperatura: desenvolvimento larvário
+  • Precipitação: criadouros disponíveis
+  • Umidade: sobrevivência adultos
+  • El Niño/La Niña: padrões multianuais
+
+TÓPICO 4: APLICAÇÕES PRÁTICAS
+  • Timing campanhas controle
+  • Alocação recursos saúde
+  • Avaliação impacto intervenções
+  • Cenários vacinação dengue
+
+DESTAQUES:
+  ⚠️ MODELOS COMPARTIMENTAIS SEIR + Dinâmica Vetorial
+
+FONTE: Fontes: Ferguson et al., 2016. Science; Chowell et al., 2016. PLoS Curr Outbreaks
+
+============================================================
+
+SLIDE 25: GEOTECNOLOGIAS: MAPEAMENTO RISCO
+--------------------------------------------------
+TÓPICO 1: SENSORIAMENTO REMOTO
+  • MODIS: Temperatura superfície
+  • Landsat: Uso solo urbano
+  • CHIRPS: Precipitação acumulada
+  • SRTM: Elevação e drenagem
+
+TÓPICO 2: ANÁLISE ESPACIAL
+  • Autocorrelação espacial (Morans I)
+  • Clusters temporais (scan statistics)
+  • Kernel densidade casos
+  • Superfícies interpolação
+
+TÓPICO 3: FATORES DE RISCO
+  • Densidade populacional
+  • Índice vulnerabilidade social
+  • Cobertura saneamento
+  • Proximidade corpos dágua
+  • Vegetação urbana (NDVI)
+
+TÓPICO 4: FERRAMENTAS OPERACIONAIS
+  • InfoDengue (alertas automáticos)
+  • ArcGIS Online (mapas dinâmicos)
+  • R Spatial (análises estatísticas)
+  • Google Earth Engine
+
+DESTAQUES:
+  ⚠️ PRODUTOS GERADOS Mapas risco transmissão Priorização áreas controle Alocação equipes campo Monitoramento intervenções
+
+
+============================================================
+
+SLIDE 26: LABORATÓRIO: REDES DIAGNÓSTICAS
+--------------------------------------------------
+TÓPICO 1: ESTRUTURA HIERÁRQUICA
+  • Nível 1: Teste rápido NS1/IgM
+  • Nível 2: RTPCR sorotipos
+  • Nível 3: Sequenciamento genético
+  • Referência: Evandro Chagas (PA)
+
+TÓPICO 2: FLUXOS TEMPORAIS
+  • Coleta → Teste rápido: <24h
+  • RTPCR resultado: 2448h
+  • Sorotipagem: 4872h
+  • Sequenciamento: 57 dias
+
+TÓPICO 3: CONTROLE QUALIDADE
+  • Painéis sorocontrole
+  • Proficiência laboratorial
+  • Certificação ISO 15189
+  • Auditoria externa
+
+TÓPICO 4: SISTEMAS INFORMAÇÃO
+  • GAL (Gerenciador Ambiente)
+  • SIVEPDDA (vigilância)
+  • Códigos rastreabilidade
+  • Relatórios automáticos
+
+DESTAQUES:
+  ⚠️ REDE NACIONAL LABORATORIAL 5 Laboratórios Centrais (LACEN)
+
+
+============================================================
+
+SLIDE 27: BIOSSEGURANÇA LABORATORIAL
+--------------------------------------------------
+TÓPICO 1: NÍVEL BIOSSEGURANÇA 2 NB-2
+  • Dengue Zika Chikungunya (diagnóstico)
+  • Cabine fluxo laminar Classe II
+  • EPI completo (N95 óculos luvas)
+  • Acesso controlado pessoal treinado
+  • Desinfecção superfícies
+
+TÓPICO 2: NÍVEL BIOSSEGURANÇA 3 NB-3
+  • Febre Amarela (manipulação cultivos)
+  • Laboratório selado pressão negativa
+  • Filtros HEPA entrada/saída
+  • Roupas proteção descartáveis
+  • Monitoramento médico funcionários
+
+TÓPICO 3: INATIVAÇÃO VIRAL
+  • Calor: 56°C/30min ou 100°C/5min
+  • Químicos: Hipoclorito 05% etanol 70%
+  • UVC: 254nm/30min
+  • Autoclave: 121°C/15min/15psi
+
+TÓPICO 4: DOCUMENTAÇÃO OBRIGATÓRIA
+  • Inventário agentes biológicos
+  • Registros acidentes/incidentes
+  • Treinamentos biossegurança
+  • Planos emergência
+  • Licenças ambientais
+
+DESTAQUES:
+  ⚠️ CLASSIFICAÇÃO RISCO Arbovírus = Grupo de Risco 23 (OMS)
+  ⚠️ ZERO ACIDENTES: Protocolo rígido + treinamento contínuo
+
+
+============================================================
+
+SLIDE 28: EPIDEMIOLOGIA: DESAFIOS ATUAIS
+--------------------------------------------------
+TÓPICO 1: EVOLUÇÃO VIRAL CONTÍNUA
+  • Novas linhagens DENV
+  • Escape imunológico
+  • Virulência alterada
+  • Adaptação climática
+
+TÓPICO 2: DISPERSÃO GLOBAL
+  • Viagens internacionais
+  • Comércio (pneus bambu)
+  • Mudanças climáticas
+  • Urbanização descontrolada
+
+TÓPICO 3: SUBNOTIFICAÇÃO CRÔNICA
+  • Casos assintomáticos (80%)
+  • Acesso limitado diagnóstico
+  • Capacidade laboratorial
+  • Variações regionais
+
+DESTAQUES:
+  ⚠️ COCIRCULAÇÃO VIRAL 4+ vírus simultaneamente Sintomas clínicos sobrepostos Reações cruzadas sorológicas Diagnóstico diferencial complexo
+  ⚠️ Próxima seção: Estratégias controle e prevenção
+  ⚠️ CENÁRIOS FUTUROS Expansão geográfica + intensificação + emergência novos vírus
+
+
+============================================================
+
+SLIDE 29: CONTROLE VETORIAL: ESTRATÉGIA INTEGRADA
+--------------------------------------------------
+APRESENTADOR: ALUNO 5 - Controle Vetorial e Prevenção
+                Duração: 10:00 - 12:30
+
+TÓPICO 1: 1 CONTROLE FÍSICO
+  • Eliminação criadouros
+  • Vedação caixas dágua
+  • Telas mosquiteiros
+  • Drenagem águas paradas
+
+TÓPICO 2: 2 CONTROLE QUÍMICO
+  • Larvicidas (Bt metoprene)
+  • Adulticidas (UBV termonebulização)
+  • Repelentes pessoais
+  • Rotação produtos (resistência)
+
+TÓPICO 3: 3 CONTROLE BIOLÓGICO
+  • Bacillus thuringiensis
+  • Peixes larvófagos (Poecilia)
+  • Copépodes predadores
+  • Fungos entomopatogênicos
+
+TÓPICO 4: 4 CONTROLE GENÉTICO
+  • Técnica Inseto Estéril (SIT)
+  • Mosquitos transgênicos
+  • Gene drive systems
+  • Wolbachia (IIT Population Replacement)
+
+DESTAQUES:
+  ⚠️ SUCESSO = Combinação métodos + sustentabilidade + participação comunitária
+  ⚠️ ESTRATÉGIA OMS Gestão Integrada Vetores (IVM)
+
+FONTE: Fontes: WHO Global Vector Control Response, 2017; Morrison et al., 2008. Am J Trop Med Hyg
+
+============================================================
+
+SLIDE 30: INOVAÇÕES: CONTROLE GENÉTICO
+--------------------------------------------------
+TÓPICO 1: MOSQUITOS TRANSGÊNICOS OX513A
+  • Gene tTAV letal dominante
+  • Descendência morre antes reprodução
+  • Redução população 9095%
+  • Testes: Cayman Brasil Malásia
+
+TÓPICO 2: WOLBACHIA wMel wAlbB
+  • Bactéria intracelular obrigatória
+  • Reduz carga viral 4075%
+  • Incompatibilidade citoplasmática
+  • World Mosquito Program
+
+TÓPICO 3: GENE DRIVE
+  • Sistema CRISPR/Cas9
+  • Herança supermendeliana
+  • Propagação população selvagem
+  • Status: Pesquisa laboratorial
+
+TÓPICO 4: TÉCNICA INSETO ESTÉRIL SIT
+  • Irradiação gama machos
+  • Esterilidade reprodutiva
+  • Redução progênie
+  • FAO/IAEA programa global
+
+DESTAQUES:
+  ⚠️ DESAFIOS REGULATÓRIOS Aprovação ética científica Aceitação comunitária Impacto ambiental Biossegurança
+
+FONTE: Fontes: Carvalho et al., 2015. PLoS Negl Trop Dis; Hoffmann et al., 2011. Cell
+
+============================================================
+
+SLIDE 31: MANEJO RESISTÊNCIA: ESTRATÉGIAS MRI
+--------------------------------------------------
+TÓPICO 1: ROTAÇÃO INSETICIDAS
+  • Ciclos 23 anos máximo
+  • Diferentes modos ação
+  • Monitoramento susceptibilidade
+  • Mapas resistência regionais
+
+TÓPICO 2: NOVOS PRODUTOS
+  • Pirimifósmetil (organofosforado)
+  • Clothianidin (neonicotinóide)
+  • Spinosad (biológico)
+  • Formulações timerelease
+
+TÓPICO 3: BIOENSAIOS PADRONIZADOS
+  • Teste suscetibilidade OMS
+  • Dose diagnóstica (DD)
+  • Tempo letal 50% (TL50)
+  • Intensidade resistência
+
+TÓPICO 4: MECANISMOS MOLECULARES
+  • Sequenciamento gene kdr
+  • Atividade esterases
+  • Citocromo P450
+  • GlutationaStransferase
+
+DESTAQUES:
+  ⚠️ SITUAÇÃO CRÍTICA BRASIL 60% populações resistentes
+  ⚠️ ESTRATÉGIA MRI (WHO) Manejo próativo resistência Preservação susceptibilidade Uso racional inseticidas Alternativas nãoquímicas
+
+
+============================================================
+
+SLIDE 32: PREVENÇÃO: VACINAÇÃO DENGUE
+--------------------------------------------------
+TÓPICO 1: DENGVAXIA Sanofi
+  • Vírus quimérico YF17D
+  • 4 sorotipos simultâneos
+  • Eficácia: 60% global
+  • Restricção: Soropositivos prévios
+  • WHO: >9 anos + endêmica
+
+TÓPICO 2: QDENGA Takeda
+  • Vírus vivo atenuado DENV2
+  • Aprovação: 2023 (ANVISA)
+  • Eficácia: 7084% (sorotipos)
+  • Indicação: 460 anos
+  • Esquema: 2 doses (0 3 meses)
+
+TÓPICO 3: INCORPORAÇÃO SUS 2024
+  • Campanha nacional inédita
+  • Meta: 32 milhões adolescentes
+  • Idades: 1014 anos
+  • Municípios >100mil hab.
+
+TÓPICO 4: VACINAS FUTURAS
+  • TV003/TV005 (NIAID)
+  • DENVax (Merck)
+  • Vacinas DNA/mRNA
+  • Plataformas vetores virais
+
+DESTAQUES:
+  ⚠️ CONSIDERAÇÕES CRÍTICAS Não substitui controle vetorial Monitoramento segurança contínuo Educação profissionais saúde Vigilância póscomercialização
+  ⚠️ IMPACTO MODELADO Cobertura 70% = 4050% incidência dengue
+
+
+============================================================
+
+SLIDE 33: EDUCAÇÃO E MOBILIZAÇÃO SOCIAL
+--------------------------------------------------
+TÓPICO 1: EDUCAÇÃO FORMAL
+  • Currículo escolar: arboviroses
+  • Material didático adaptado
+  • Capacitação professores
+  • Projetos interdisciplinares
+  • Ciência cidadã (MonitorAr)
+
+TÓPICO 2: COMUNICAÇÃO DIGITAL
+  • Apps móveis educativos
+  • Redes sociais segmentadas
+  • Gamificação prevenção
+  • Influencers saúde
+  • Realidade aumentada
+
+TÓPICO 3: MOBILIZAÇÃO COMUNITÁRIA
+  • Agentes comunitários saúde
+  • Lideranças locais
+  • Organizações religiosas
+  • Associações moradores
+  • Movimentos sociais
+
+TÓPICO 4: ESTRATÉGIAS CRIATIVAS
+  • Teatro educativo
+  • Música e jingles
+  • Concursos arte
+  • Mascotes personagens
+  • Campanhas virais
+
+DESTAQUES:
+  ⚠️ MENSAGENSCHAVE EDUCAÇÃO Eliminar água parada (10 minutos/semana) Sintomas de alerta gravidade Procurar serviços saúde precocemente Não automedicação (aspirina proibida) Proteção individual (repelentes roupas)
+
+FONTE: Fontes: Parks  Lloyd, 2004. Trop Med Int Health; Toledo et al., 2011. Cad Saúde Pública
+
+============================================================
+
+SLIDE 34: POLÍTICAS PÚBLICAS: GOVERNANÇA MULTISETORIAL
+--------------------------------------------------
+TÓPICO 1: MARCO LEGAL
+  • Lei 13.301/2016 (acesso domicílios)
+  • Portaria 1.378/2013 (PNCD)
+  • Decreto 7.616/2011 (emergência)
+  • Resolução CIT 8/2017
+
+TÓPICO 2: FINANCIAMENTO
+  • Bloco custeio vigilância
+  • Incentivo PAB variável
+  • Emendas parlamentares
+  • R 12 bilhão anual (estimado)
+
+TÓPICO 3: INTERSETORIALIDADE
+  • Saúde + Educação + Meio Ambiente
+  • Saneamento + Habitação
+  • Defesa Civil + Segurança
+  • Comitês gestão integrada
+
+TÓPICO 4: MONITORAMENTO
+  • Pacto pela Saúde (indicadores)
+  • Relatórios gestão trimestral
+  • Avaliação externa
+  • Transparência dados
+
+DESTAQUES:
+  ⚠️ DESAFIOS GESTÃO Fragmentação responsabilidades Recursos insuficientes Capacidade técnica limitada Rotatividade gestores
+  ⚠️ FRAMEWORK BRASIL Plano Nacional Controle Dengue (PNCD)
+
+
+============================================================
+
+SLIDE 35: ONE HEALTH: ABORDAGEM INTEGRADA
+--------------------------------------------------
+TÓPICO 1: INTERFACE HUMANO-ANIMAL
+  • Primatas nãohumanos (FA silvestre)
+  • Animais peridomésticos
+  • Vigilância zoológicos
+  • Medicina veterinária
+
+TÓPICO 2: INTERFACE AMBIENTE
+  • Mudanças climáticas
+  • Desmatamento e urbanização
+  • Biodiversidade e ecossistemas
+  • Poluição e saneamento
+
+TÓPICO 3: PESQUISA TRANSLACIONAL
+  • Modelos animais experimentais
+  • Ecologia vetores
+  • Dinâmica transmissão
+  • Vacinas e antivirais
+
+TÓPICO 4: GOVERNANÇA INTEGRADA
+  • Comitês multissetoriais
+  • Políticas interministeriais
+  • Capacitação profissional
+  • Financiamento conjunto
+
+DESTAQUES:
+  ⚠️ BENEFÍCIOS ABORDAGEM Detecção precoce emergências Resposta coordenada eficaz Redução custos saúde Sustentabilidade ambiental Equidade e justiça social
+  ⚠️ Próxima seção: Conclusões e perspectivas futuras
+  ⚠️ ONE HEALTH = UMA SÓ SAÚDE Humanos + Animais + Ambiente = Saúde Global
+
+
+============================================================
+
+SLIDE 36: LIÇÕES APRENDIDAS: 30 ANOS DENGUE BRASIL
+--------------------------------------------------
+APRESENTADOR: ALUNO 6 - Conclusões e Perspectivas Futuras
+                Duração: 12:30 - 15:00
+
+TÓPICO 1: DESAFIOS PERSISTENTES
+  • Controle vetorial insustentável
+  • Resistência inseticidas crescente
+  • Urbanização descontrolada
+  • Mudanças climáticas aceleradas
+  • Recursos limitados vs demanda
+
+TÓPICO 2: SUCESSOS ALCANÇADOS
+  • Sistema vigilância robusto
+  • Capacidade diagnóstica ampliada
+  • Redução mortalidade (<01%)
+  • Manejo clínico padronizado
+  • Vacinação incorporada SUS
+
+TÓPICO 3: INOVAÇÕES EMERGENTES
+  • Controle genético (Wolbachia)
+  • Diagnóstico PointofCare
+  • Modelagem preditiva IA
+  • Telemedicina rural
+  • Vacinas próxima geração
+
+TÓPICO 4: PERSPECTIVAS 2030
+  • Abordagem One Health
+  • Sustentabilidade ambiental
+  • Equidade acesso saúde
+  • Preparação próximas pandemias
+  • Cooperação internacional
+
+DESTAQUES:
+  ⚠️ IMPACTO ACUMULADO 19902024 15M+ Casos dengue notificados
+
+FONTE: Fontes: Bhatt et al., 2013. Nature; Stanaway et al., 2016. PLoS Negl Trop Dis
+
+============================================================
+
+SLIDE 37: CENÁRIOS FUTUROS: 2025-2050
+--------------------------------------------------
+TÓPICO 1: CENÁRIO INTERMEDIÁRIO
+  • Clima: +2°C controlado
+  • Tecnologia: Controle genético
+  • Vacinas: Multivalentes eficazes
+  • Vigilância: IA preditiva
+  • Cooperação: Global coordenada
+
+DESTAQUES:
+  ⚠️ CENÁRIO PESSIMISTA Clima: +3°C até 2100 Expansão: Aedes → temperadas Casos: +2 bilhões expostos Novos vírus: Usutu Mayaro urbano Resistência: Total inseticidas
+  ⚠️ FATORES DETERMINANTES Compromisso político sustentado Investimento PD acelerado Ação climática efetiva Cooperação internacional Participação comunitária ativa
+  ⚠️ PESQUISAS PRIORITÁRIAS Vacinas universais + Antivirais específicos + Controle genético sustentável
+
+
+============================================================
+
+SLIDE 38: RECOMENDAÇÕES ESTRATÉGICAS
+--------------------------------------------------
+TÓPICO 1: FORTALECIMENTO SISTEMAS SAÚDE
+  • Capacidade diagnóstica descentralizada
+  • Manejo clínico padronizado
+  • Vigilância genomica rotineira
+  • Telemedicina áreas remotas
+  • Formação profissional contínua
+
+TÓPICO 2: INOVAÇÃO CONTROLE VETORIAL
+  • Escalonamento Wolbachia
+  • Desenvolvimento novos larvicidas
+  • Manejo integrado resistência
+  • Biocontrole sustentável
+  • Monitoramento em tempo real
+
+TÓPICO 3: AMPLIAÇÃO VACINAÇÃO
+  • Cobertura nacional QDENGA
+  • Vacinas próxima geração
+  • Estratégias diferenciadas
+  • Vigilância póscomercialização
+  • Acesso equitativo
+
+TÓPICO 4: COOPERAÇÃO INTERNACIONAL
+  • Compartilhamento dados virológicos
+  • Transferência tecnologia
+  • Financiamento conjunto PD
+  • Resposta coordenada emergências
+  • Capacitação técnica mútua
+
+DESTAQUES:
+  ⚠️ ROI: Cada dólar investido = 1015 dólares economizados
+  ⚠️ INVESTIMENTO NECESSÁRIO US 3050 bilhões globais (20252035) Retorno: US 300500 bilhões (custos evitados)
+
+
+============================================================
+
+SLIDE 39: AGENDA PESQUISA: PRÓXIMOS 10 ANOS
+--------------------------------------------------
+TÓPICO 1: PRIORIDADE 1: VACINAS
+  • Panflavivírus única dose
+  • Vacina nasal mucosa
+  • Plataformas mRNA adaptáveis
+  • Vacinas terapêuticas
+  • Proteção esterilizante
+
+TÓPICO 2: PRIORIDADE 2: ANTIVIRAIS
+  • Inibidores NS5 polimerase
+  • Moduladores resposta imune
+  • Terapias RNA interferência
+  • Anticorpos monoclonais
+  • Formulações pediátricas
+
+TÓPICO 3: PRIORIDADE 3: VETORES
+  • Gene drive autolimitante
+  • Wolbachia população replacement
+  • Biocontrole fungos/vírus
+  • Feromônios comportamento
+  • Inseticidas próxima geração
+
+TÓPICO 4: PRIORIDADE 4: VIGILÂNCIA
+  • IA predição surtos
+  • Sequenciamento tempo real
+  • Sensores IoT ambientais
+  • Diagnóstico molecular portátil
+  • Plataformas integradas
+
+DESTAQUES:
+  ⚠️ MARCOS 2030 Redução 75% incidência global Eliminação transmissão urbana FA Vacina universal flavivírus Antiviral oral eficaz Controle genético escalonado
+
+
+============================================================
+
+SLIDE 40: CALL TO ACTION: O QUE FAZER AGORA
+--------------------------------------------------
+TÓPICO 1: PROFISSIONAIS SAÚDE
+  • Capacitação diagnóstico diferencial
+  • Manejo clínico baseado evidências
+  • Vigilância epidemiológica ativa
+  • Educação comunitária contínua
+  • Advocacia políticas públicas
+
+TÓPICO 2: GESTORES PÚBLICOS
+  • Financiamento sustentável programas
+  • Integração intersetorial efetiva
+  • Planejamento baseado evidências
+  • Transparência indicadores
+  • Participação social institucionalizada
+
+TÓPICO 3: PESQUISADORES
+  • Pesquisa translacional acelerada
+  • Colaboração multidisciplinar
+  • Transferência tecnologia
+  • Formação recursos humanos
+  • Comunicação científica efetiva
+
+TÓPICO 4: SOCIEDADE CIVIL
+  • Eliminação criadouros domiciliares
+  • Adesão vacinação recomendada
+  • Procura serviços sintomas
+  • Participação controle social
+  • Disseminação informação científica
+
+DESTAQUES:
+  ⚠️ NÃO HÁ TEMPO A PERDER: Cada ano atraso = milhões casos evitáveis
+  ⚠️ URGÊNCIA MÁXIMA Janela oportunidade 20252030 Ação agora = prevenção catástrofe futura
+
+
+============================================================
+
+SLIDE 41: MENSAGEM FINAL
+--------------------------------------------------
+
+============================================================
+
+SLIDE 42: OBRIGADO
+--------------------------------------------------
+APRESENTADOR: ALUNO 1: Introdução e Conceitos Slides 1-7
+
+DESTAQUES:
+  ⚠️ CONTATO E DÚVIDAS Universidade Unigranrio• Enfermagem • Microbiologia e imunologia Professora: Roberta Rego
+  ⚠️ DURAÇÃO TOTAL: 15 MINUTOS Cada aluno: 25 minutos (±30 segundos)
+
+FONTE: Fontes: Esta apresentação foi baseada em evidências científicas das principais publicações em arboviroses e saúde pública global
+
+============================================================
+

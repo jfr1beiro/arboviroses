@@ -1,0 +1,1462 @@
+[
+  {
+    "number": 2,
+    "title": "O QUE SÃO ARBOVIROSES",
+    "aluno_info": "",
+    "cards": [],
+    "highlights": [
+      "ARBOVÍRUS = ARthropodBOrne VIRUS Vírus transmitidos por artrópodes"
+    ],
+    "reference": "Fontes: Weaver  Reisen, 2010. Annu Rev Entomol; Gould et al., 2017. Lancet"
+  },
+  {
+    "number": 3,
+    "title": "CLASSIFICAÇÃO TAXONÔMICA",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "FLAVIVIRIDAE",
+        "items": []
+      },
+      {
+        "title": "TOGAVIRIDAE",
+        "items": []
+      },
+      {
+        "title": "PERIBUNYAVIRIDAE",
+        "items": []
+      },
+      {
+        "title": "PHENUIVIRIDAE",
+        "items": []
+      }
+    ],
+    "highlights": [
+      "134 ESPÉCIES AFETAM HUMANOS GLOBALMENTE"
+    ],
+    "reference": "Fontes: Calisher et al., 1989. Am J Trop Med Hyg; ICTV Master Species List 2023"
+  },
+  {
+    "number": 4,
+    "title": "CENÁRIO EPIDEMIOLÓGICO GLOBAL 2024",
+    "aluno_info": "",
+    "cards": [],
+    "highlights": [
+      "DADOS OMS (JanAbr 2024) 76M Casos reportados"
+    ],
+    "reference": "Fontes: WHO Weekly Epidemiological Record, 2024; PAHO Health Information Platform"
+  },
+  {
+    "number": 5,
+    "title": "PANORAMA BRASIL 2025 SE 01-04",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "FEBRE AMARELA",
+        "items": []
+      }
+    ],
+    "highlights": [
+      "DENGUE 139.241 casos (686/100 mil hab.) 21 óbitos confirmados 160 em investigação Estados críticos: Acre São Paulo Mato Grosso Sorotipos: DENV1 DENV2 DENV3 (aumento)",
+      "OROPOUCHE 2.791 casos (↑74% vs 2024) Primeiras mortes mundiais registradas ES (95%) RJ (99) MG (30 casos)"
+    ],
+    "reference": "Fontes: Brasil. MS. CIEVS. Boletim COE Arboviroses SE 04/2025; SIVEPDDA"
+  },
+  {
+    "number": 6,
+    "title": "POR QUE EMERGÊNCIA GLOBAL",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "MUDANÇAS CLIMÁTICAS",
+        "items": [
+          "+11°C temperatura global (18802020)",
+          "Expansão zona tropical 25° latitude"
+        ]
+      },
+      {
+        "title": "URBANIZAÇÃO DESCONTROLADA",
+        "items": [
+          "68% população urbana até 2050",
+          "+300% criadouros artificiais"
+        ]
+      },
+      {
+        "title": "ADAPTAÇÃO VETORIAL",
+        "items": [
+          "60% populações resistentes",
+          "Expansão geográfica"
+        ]
+      },
+      {
+        "title": "GLOBALIZAÇÃO",
+        "items": [
+          "Dispersão intercontinental",
+          "Viagens internacionais"
+        ]
+      },
+      {
+        "title": "EVOLUÇÃO VIRAL",
+        "items": [
+          "Novas cepas virulentas",
+          "Escape imunológico"
+        ]
+      }
+    ],
+    "highlights": [
+      "CONVERGÊNCIA = EXPLOSÃO EPIDÊMICA"
+    ],
+    "reference": "Fontes: Ryan et al., 2019. Nature Rev Microbiol; IPCC AR6 Climate Report, 2023"
+  },
+  {
+    "number": 7,
+    "title": "FOCO: O PRINCIPAL VETOR",
+    "aluno_info": "Transição para ALUNO 2",
+    "cards": [],
+    "highlights": [
+      "AEDES AEGYPTI O mosquito mais eficaz do mundo"
+    ],
+    "reference": "Fontes: Powell  Tabachnick, 2013. Trends Parasitol; Kraemer et al., 2015. eLife"
+  },
+  {
+    "number": 8,
+    "title": "AEDES AEGYPTI: ANÁLISE MORFOLÓGICA",
+    "aluno_info": "ALUNO 2 - Aedes aegypti: Análise Vetorial\n                Duração: 2:30 - 5:00",
+    "cards": [
+      {
+        "title": "CARACTERÍSTICAS FÍSICAS",
+        "items": [
+          "Tamanho: 47mm (menor que moeda 1 real)",
+          "Peso: 23mg",
+          "Volume sangue/repasto: 25μL",
+          "Raio de voo: 100200m típico"
+        ]
+      },
+      {
+        "title": "IDENTIFICAÇÃO DIAGNÓSTICA",
+        "items": [
+          "Listras brancoprateadas (patas + tórax)",
+          "Probóscide serrilhada",
+          "Palpos curtos () vs longos (Anopheles)",
+          "Asas transparentes sem manchas",
+          "Abdome: distensão 3x para sangue"
+        ]
+      }
+    ],
+    "highlights": [
+      "COMPETÊNCIA ÚNICA: 4 vírus simultâneos"
+    ],
+    "reference": "Fontes: Consoli  LourençodeOliveira, 1994. Principais mosquitos; Christophers, 1960. Aedes aegypti"
+  },
+  {
+    "number": 9,
+    "title": "BIOECOLOGIA: PADRÕES COMPORTAMENTAIS",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "ATIVIDADE CIRCADIANA",
+        "items": [
+          "06h10h: Pico matinal (máxima atividade)",
+          "10h15h: Repouso diurno",
+          "15h19h: Pico vespertino",
+          "Noturno: Inativo ( Anopheles)"
+        ]
+      },
+      {
+        "title": "PREFERÊNCIAS AMBIENTAIS",
+        "items": [
+          "ENDOFILIA: Interior das residências",
+          "ANTROPOFILIA: 95% preferência sangue humano",
+          "TERMOFILIA: Zona ótima 2530°C",
+          "HIGROFILIA: Umidade >60%"
+        ]
+      },
+      {
+        "title": "DIMORFISMO SEXUAL",
+        "items": [
+          "Fêmeas: Hematófagas (proteínas → ovos)",
+          "Machos: Nectarívoros (carboidratos → energia)"
+        ]
+      }
+    ],
+    "highlights": [],
+    "reference": "Fontes: Scott et al., 2006. PLoS Med; Takken  Verhulst, 2013. Annu Rev Entomol"
+  },
+  {
+    "number": 10,
+    "title": "CICLO BIOLÓGICO: METAMORFOSE COMPLETA",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "1 OVO 1-2 dias",
+        "items": [
+          "Resistência: até 450 dias sem água",
+          "Postura: 50150 ovos/ciclo",
+          "Local: superfícies próximas à água"
+        ]
+      },
+      {
+        "title": "2 LARVA 3-5 dias",
+        "items": [
+          "4 estádios de desenvolvimento",
+          "Alimentação: filtradora (detritos bactérias)",
+          "Respiração: sifão superficial",
+          "Desenvolvimento: temperatura dependente"
+        ]
+      },
+      {
+        "title": "3 PUPA 1-2 dias",
+        "items": [
+          "Não se alimenta",
+          "Apenas respiração e metamorfose",
+          "Natação limitada (escape predadores)"
+        ]
+      },
+      {
+        "title": "4 ADULTO",
+        "items": [
+          ": 3045 dias",
+          ": 1520 dias",
+          "Maturação sexual: 23 dias",
+          "Ciclo gonotrófico: 23 dias",
+          "Dispersão ativa: até 800m"
+        ]
+      }
+    ],
+    "highlights": [
+      "CRÍTICO: Todos os estágios aquáticos obrigatórios",
+      "DURAÇÃO TOTAL: 710 dias (condições ótimas)"
+    ],
+    "reference": "Fontes: Forattini, 2002. Culicidologia Médica; Yang et al., 2009. PLoS Negl Trop Dis"
+  },
+  {
+    "number": 11,
+    "title": "CRIADOUROS: ANÁLISE QUANTITATIVA",
+    "aluno_info": "",
+    "cards": [],
+    "highlights": [
+      "PARÂMETROS CRÍTICOS Volume mínimo: 1mL água pH ótimo: 6585 Temperatura: 2035°C Distância casas: Água limpa preferencial",
+      "DISTRIBUIÇÃO NACIONAL: 3.587 municípios com Aedes (89% do Brasil)"
+    ],
+    "reference": "Fontes: Brasil. MS. LIRAa 2023; Honório et al., 2003. Mem Inst Oswaldo Cruz"
+  },
+  {
+    "number": 12,
+    "title": "COMPETÊNCIA VETORIAL: BASE MOLECULAR",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "DIA 0: INFECÇÃO INICIAL",
+        "items": [
+          "Ingestão sangue virêmico (>10⁵ cópias/mL)",
+          "Vírus infecta epitélio intestinal"
+        ]
+      },
+      {
+        "title": "DIAS 1-7: REPLICAÇÃO INTESTINAL",
+        "items": [
+          "Multiplicação no intestino médio",
+          "Superação barreira intestinal",
+          "Disseminação para hemocele"
+        ]
+      },
+      {
+        "title": "DIAS 7-12: DISSEMINAÇÃO SISTÊMICA",
+        "items": [
+          "Migração para glândulas salivares",
+          "Superação barreira salivar",
+          "Replicação nos acini glandulares"
+        ]
+      },
+      {
+        "title": "DIAS 12-45: TRANSMISSÃO ATIVA",
+        "items": [
+          "Vírus viável na saliva (10³10⁴ partículas/picada)",
+          "Competência vitalícia",
+          "Transmissão a cada repasto"
+        ]
+      }
+    ],
+    "highlights": [
+      "FATOR CRÍTICO: 1°C ↑ = 23 dias período"
+    ],
+    "reference": "Fontes: Franz et al., 2015. PLoS Negl Trop Dis; Tesla et al., 2018. Proc R Soc B"
+  },
+  {
+    "number": 13,
+    "title": "RESISTÊNCIA: PROBLEMA CRESCENTE",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "MECANISMOS MOLECULARES",
+        "items": [
+          "Mutações genesalvo (kdr ace1)",
+          "Enzimas detoxificantes ↑",
+          "Resistência comportamental",
+          "Resistência cuticular"
+        ]
+      },
+      {
+        "title": "IMPACTO ECONÔMICO",
+        "items": [
+          "Doses maiores necessárias",
+          "Produtos mais caros",
+          "Eficácia decrescente",
+          "R 35 bilhões anuais Brasil"
+        ]
+      },
+      {
+        "title": "CONSEQUÊNCIAS",
+        "items": [
+          "Falha controle químico",
+          "Surtos epidêmicos",
+          "Necessidade métodos alternativos"
+        ]
+      },
+      {
+        "title": "ESTRATÉGIAS MANEJO",
+        "items": [
+          "Rotação inseticidas",
+          "Monitoramento resistência",
+          "Controle integrado"
+        ]
+      }
+    ],
+    "highlights": [
+      "SITUAÇÃO ATUAL BRASIL 60% populações Aedes resistentes Resistência múltipla (organofosforados + piretróides) Expansão geográfica da resistência"
+    ],
+    "reference": "Fontes: Macoris et al., 2018. PLoS Negl Trop Dis; Garcia et al., 2018. PLoS One"
+  },
+  {
+    "number": 14,
+    "title": "FENÔMENO ÚNICO MUNDIAL",
+    "aluno_info": "",
+    "cards": [],
+    "highlights": [
+      "COCIRCULAÇÃO VIRAL Diagnóstico diferencial complexo"
+    ],
+    "reference": "Fontes: Vasilakis  Weaver, 2017. Curr Opin Virol; WilderSmith et al., 2017. Nature Rev Dis Primers"
+  },
+  {
+    "number": 15,
+    "title": "DENGUE: PATOGÊNESE MOLECULAR",
+    "aluno_info": "ALUNO 3 - Doenças Específicas: Patogênese e Clínica\n                Duração: 5:00 - 7:30",
+    "cards": [
+      {
+        "title": "CARACTERÍSTICAS VIRAIS",
+        "items": [
+          "Família: Flaviviridae",
+          "Genoma: RNA (+) 11kb",
+          "4 sorotipos: DENV1 2 3 4",
+          "Proteínas: 3 estruturais 7 nãoestruturais"
+        ]
+      },
+      {
+        "title": "TROPISMO CELULAR",
+        "items": [
+          "Alvos: Monócitos macrófagos células dendríticas",
+          "Receptores: DCSIGN Hsp90 Hsp70",
+          "Barreira: Endotélio vascular"
+        ]
+      },
+      {
+        "title": "MECANISMOS PATOGÊNICOS",
+        "items": [
+          "ADE (AntibodyDependent Enhancement)",
+          "Tempestade de citocinas (TNFα IL6)",
+          "NS1 solúvel → disfunção endotelial",
+          "Coagulopatia de consumo",
+          "Extravasamento plasmático"
+        ]
+      }
+    ],
+    "highlights": [
+      "ADE CRÍTICO Infecção secundária = doença GRAVE"
+    ],
+    "reference": "Fontes: Halstead, 1988. Science; Martina et al., 2009. PLoS Pathog"
+  },
+  {
+    "number": 16,
+    "title": "DENGUE: CLASSIFICAÇÃO CLÍNICA OMS",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "DENGUE SEM SINAIS ALARME 90",
+        "items": [
+          "Febre 3940°C (27 dias)",
+          "Cefaleia intensa dor retroorbital",
+          "Mialgia artralgia severas",
+          "Exantema tardio prova laço (+)"
+        ]
+      },
+      {
+        "title": "DENGUE COM SINAIS ALARME 8",
+        "items": [
+          "Dor abdominal intensa",
+          "Vômitos persistentes",
+          "Sangramento mucosas",
+          "Hepatomegalia >2cm",
+          "Letargia/irritabilidade"
+        ]
+      },
+      {
+        "title": "DENGUE GRAVE 2",
+        "items": [
+          "Choque por extravasamento plasmático",
+          "Sangramento grave (hematemese melena)",
+          "Disfunção orgânica (hepatite miocardite)"
+        ]
+      }
+    ],
+    "highlights": [
+      "BRASIL 2024: 82.908 casos graves (+3078%) MORTALIDADE: 0055% (manejo dependente)",
+      "DISTRIBUIÇÃO CASOS 90% SEM SINAIS ALARME | 8% COM ALARME | 2% GRAVE"
+    ],
+    "reference": "Fontes: WHO, 2009. Dengue Guidelines; Brasil. MS. Boletim Epidemiológico 2024"
+  },
+  {
+    "number": 17,
+    "title": "ZIKA: NEUROTROPISMO E TERATOGENIA",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "CARACTERÍSTICAS VIRAIS",
+        "items": []
+      },
+      {
+        "title": "SÍNDROME CONGÊNITA ZIKA",
+        "items": []
+      },
+      {
+        "title": "RISCO GESTACIONAL",
+        "items": []
+      },
+      {
+        "title": "ADULTOS - COMPLICAÇÕES NEUROLÓGICAS",
+        "items": []
+      }
+    ],
+    "highlights": [
+      "NEUROINVASÃO Barreira Hematoencefálica",
+      "TRANSMISSÃO SEXUAL: 6 MESES"
+    ],
+    "reference": "Fontes: Musso et al., 2015. Eurosurveillance; Mlakar et al., 2016. NEJM"
+  },
+  {
+    "number": 18,
+    "title": "CHIKUNGUNYA: AQUELE QUE SE CURVA",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "FASE AGUDA 0-14 dias",
+        "items": []
+      },
+      {
+        "title": "FASE SUBAGUDA 15 dias - 3 meses",
+        "items": []
+      },
+      {
+        "title": "FASE CRÔNICA 3 meses",
+        "items": []
+      }
+    ],
+    "highlights": [
+      "FATORES RISCO CRONIFICAÇÃO >40 anos",
+      "PATOGÊNESE ARTICULAR Tropismo: sinoviócitos"
+    ],
+    "reference": "Fontes: Schilte et al., 2013. PLoS Negl Trop Dis; Couturier et al., 2012. PLoS One"
+  },
+  {
+    "number": 19,
+    "title": "FEBRE AMARELA: CICLOS EPIDEMIOLÓGICOS",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "CICLO SILVESTRE Atual",
+        "items": [
+          "Vetores: Haemagogus Sabethes",
+          "Hospedeiros: Primatas nãohumanos",
+          "Ambiente: Florestas matas ciliares",
+          "Humanos: Hospedeiros acidentais",
+          "Casos: Esporádicos ocupacionais"
+        ]
+      },
+      {
+        "title": "CICLO URBANO Eliminado 1942",
+        "items": [
+          "Vetor: Aedes aegypti exclusivo",
+          "Hospedeiros: Humanos exclusivos",
+          "Transmissão: Antroponótica",
+          "Risco: Reintrodução possível"
+        ]
+      }
+    ],
+    "highlights": [
+      "PROGNÓSTICO 85% recuperação na remissão 15% evolui toxêmica → 2050% mortalidade"
+    ],
+    "reference": "Fontes: Monath, 2001. Vaccine; Vasconcelos, 2003. Rev Inst Med Trop SP"
+  },
+  {
+    "number": 20,
+    "title": "OROPOUCHE: NOVA AMEAÇA EMERGENTE",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "VETOR: Culicoides paraensis maruim",
+        "items": [
+          "Tamanho: 13mm (menor que Aedes)",
+          "Atividade: Crepuscular",
+          "Habitat: Áreas úmidas rurais"
+        ]
+      },
+      {
+        "title": "EXPANSÃO GEOGRÁFICA",
+        "items": [
+          "Espírito Santo: 95% casos brasileiros",
+          "Rio de Janeiro: 99 casos",
+          "Minas Gerais: 30 casos",
+          "Interiorização preocupante"
+        ]
+      },
+      {
+        "title": "TRANSMISSÃO VERTICAL CONFIRMADA",
+        "items": [
+          "Microcefalia em recémnascidos",
+          "Óbitos fetais documentados",
+          "Risco similar ao Zika"
+        ]
+      },
+      {
+        "title": "CARACTERÍSTICAS",
+        "items": [
+          "Família: Peribunyaviridae",
+          "Descoberta: 1960 (bichopreguiça)",
+          "Sintomas: Similar dengue",
+          "Evolução fatal: 45 dias"
+        ]
+      }
+    ],
+    "highlights": [
+      "EPIDEMIOLOGIA 20242025 8.078 casos confirmados (Américas) 2.791 casos Brasil (↑74% vs 2024) PRIMEIRAS MORTES MUNDIAIS: 2 óbitos (BA)",
+      "MARCOS 2024: Primeira morte + transmissão vertical"
+    ],
+    "reference": "Fontes: Brasil. MS. COE Nacional, 2024; RomeroAlvarez  Escobar, 2018. PLoS Negl Trop Dis"
+  },
+  {
+    "number": 21,
+    "title": "DESAFIO DIAGNÓSTICO",
+    "aluno_info": "",
+    "cards": [],
+    "highlights": [
+      "PROBLEMA: SINTOMAS SIMILARES 4 vírus + sintomas sobrepostos + reações cruzadas",
+      "Próxima seção: Métodos diagnósticos avançados"
+    ],
+    "reference": "Fontes: Peeling et al., 2010. Nature Rev Microbiol; Guzman  Harris, 2015. Lancet"
+  },
+  {
+    "number": 22,
+    "title": "DIAGNÓSTICO: ERA MOLECULAR",
+    "aluno_info": "ALUNO 4 - Diagnóstico e Epidemiologia Avançada\n                Duração: 7:30 - 10:00",
+    "cards": [
+      {
+        "title": "RT-PCR TEMPO REAL Padrão Ouro",
+        "items": [
+          "Detecção: RNA viral (17 dias)",
+          "Especificidade: >99%",
+          "Quantificação: Carga viral (cópias/mL)",
+          "Diferenciação: Sorotipos específicos"
+        ]
+      },
+      {
+        "title": "ANTÍGENO NS1 Dengue",
+        "items": [
+          "Proteína nãoestrutural solúvel",
+          "Janela: 19 dias póssintomas",
+          "Teste rápido: Disponível SUS",
+          "Correlação: Viremia e gravidade"
+        ]
+      },
+      {
+        "title": "SOROLOGIA IgMIgG",
+        "items": [
+          "IgM: 590 dias (infecção recente)",
+          "IgG: >90 dias (infecção passada)",
+          "Limitação: Reações cruzadas flavivírus"
+        ]
+      }
+    ],
+    "highlights": [
+      "DESAFIO: Cocirculação + sintomas similares = Diagnóstico diferencial complexo",
+      "INOVAÇÃO 2024 RTPCR Multiplex PAHO: Mayaro + Oropouche simultâneo"
+    ],
+    "reference": "Fontes: PAHO/WHO RTPCR Protocols, 2019; Lanciotti et al., 1992. J Clin Microbiol"
+  },
+  {
+    "number": 23,
+    "title": "VIGILÂNCIA EPIDEMIOLÓGICA: SISTEMAS INTEGRADOS",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "SISTEMA NACIONAL SINAN",
+        "items": [
+          "Notificação compulsória imediata",
+          "Investigação epidemiológica 24h",
+          "Monitoramento surtos em tempo real",
+          "Análise espacial (SIG)"
+        ]
+      },
+      {
+        "title": "VIGILÂNCIA GLOBAL OMS",
+        "items": [
+          "GOARN (Outbreak Alert Response)",
+          "Critérios ESPII ativação",
+          "Compartilhamento sequências virais"
+        ]
+      },
+      {
+        "title": "INDICADORES CHAVE",
+        "items": [
+          "Incidência por 100mil hab.",
+          "Taxa mortalidade específica",
+          "Índice infestação predial (IIP)",
+          "Levantamento rápido índice Aedes (LIRAa)"
+        ]
+      },
+      {
+        "title": "INOVAÇÕES TECNOLÓGICAS",
+        "items": [
+          "Apps móveis notificação",
+          "Inteligência artificial predição",
+          "Sensoriamento remoto (satélites)",
+          "Big data climático"
+        ]
+      }
+    ],
+    "highlights": [
+      "META: Detecção surtos 72h + resposta 7 dias"
+    ],
+    "reference": "Fontes: WHO International Health Regulations, 2005; PAHO PLISA Platform"
+  },
+  {
+    "number": 24,
+    "title": "MODELAGEM MATEMÁTICA: PREVISÃO EPIDÊMICA",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "VARIÁVEIS HUMANAS",
+        "items": [
+          "S: Susceptíveis (população naive)",
+          "E: Expostos (incubação 47 dias)",
+          "I: Infectivos (viremia 17 dias)",
+          "R: Recuperados (imunes)"
+        ]
+      },
+      {
+        "title": "VARIÁVEIS VETORIAIS",
+        "items": [
+          "Sv: Mosquitos susceptíveis",
+          "Ev: Mosquitos expostos",
+          "Iv: Mosquitos infectivos",
+          "Capacidade suporte (K)"
+        ]
+      },
+      {
+        "title": "FATORES CLIMÁTICOS",
+        "items": [
+          "Temperatura: desenvolvimento larvário",
+          "Precipitação: criadouros disponíveis",
+          "Umidade: sobrevivência adultos",
+          "El Niño/La Niña: padrões multianuais"
+        ]
+      },
+      {
+        "title": "APLICAÇÕES PRÁTICAS",
+        "items": [
+          "Timing campanhas controle",
+          "Alocação recursos saúde",
+          "Avaliação impacto intervenções",
+          "Cenários vacinação dengue"
+        ]
+      }
+    ],
+    "highlights": [
+      "MODELOS COMPARTIMENTAIS SEIR + Dinâmica Vetorial"
+    ],
+    "reference": "Fontes: Ferguson et al., 2016. Science; Chowell et al., 2016. PLoS Curr Outbreaks"
+  },
+  {
+    "number": 25,
+    "title": "GEOTECNOLOGIAS: MAPEAMENTO RISCO",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "SENSORIAMENTO REMOTO",
+        "items": [
+          "MODIS: Temperatura superfície",
+          "Landsat: Uso solo urbano",
+          "CHIRPS: Precipitação acumulada",
+          "SRTM: Elevação e drenagem"
+        ]
+      },
+      {
+        "title": "ANÁLISE ESPACIAL",
+        "items": [
+          "Autocorrelação espacial (Morans I)",
+          "Clusters temporais (scan statistics)",
+          "Kernel densidade casos",
+          "Superfícies interpolação"
+        ]
+      },
+      {
+        "title": "FATORES DE RISCO",
+        "items": [
+          "Densidade populacional",
+          "Índice vulnerabilidade social",
+          "Cobertura saneamento",
+          "Proximidade corpos dágua",
+          "Vegetação urbana (NDVI)"
+        ]
+      },
+      {
+        "title": "FERRAMENTAS OPERACIONAIS",
+        "items": [
+          "InfoDengue (alertas automáticos)",
+          "ArcGIS Online (mapas dinâmicos)",
+          "R Spatial (análises estatísticas)",
+          "Google Earth Engine"
+        ]
+      }
+    ],
+    "highlights": [
+      "PRODUTOS GERADOS Mapas risco transmissão Priorização áreas controle Alocação equipes campo Monitoramento intervenções"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 26,
+    "title": "LABORATÓRIO: REDES DIAGNÓSTICAS",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "ESTRUTURA HIERÁRQUICA",
+        "items": [
+          "Nível 1: Teste rápido NS1/IgM",
+          "Nível 2: RTPCR sorotipos",
+          "Nível 3: Sequenciamento genético",
+          "Referência: Evandro Chagas (PA)"
+        ]
+      },
+      {
+        "title": "FLUXOS TEMPORAIS",
+        "items": [
+          "Coleta → Teste rápido: <24h",
+          "RTPCR resultado: 2448h",
+          "Sorotipagem: 4872h",
+          "Sequenciamento: 57 dias"
+        ]
+      },
+      {
+        "title": "CONTROLE QUALIDADE",
+        "items": [
+          "Painéis sorocontrole",
+          "Proficiência laboratorial",
+          "Certificação ISO 15189",
+          "Auditoria externa"
+        ]
+      },
+      {
+        "title": "SISTEMAS INFORMAÇÃO",
+        "items": [
+          "GAL (Gerenciador Ambiente)",
+          "SIVEPDDA (vigilância)",
+          "Códigos rastreabilidade",
+          "Relatórios automáticos"
+        ]
+      }
+    ],
+    "highlights": [
+      "REDE NACIONAL LABORATORIAL 5 Laboratórios Centrais (LACEN)"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 27,
+    "title": "BIOSSEGURANÇA LABORATORIAL",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "NÍVEL BIOSSEGURANÇA 2 NB-2",
+        "items": [
+          "Dengue Zika Chikungunya (diagnóstico)",
+          "Cabine fluxo laminar Classe II",
+          "EPI completo (N95 óculos luvas)",
+          "Acesso controlado pessoal treinado",
+          "Desinfecção superfícies"
+        ]
+      },
+      {
+        "title": "NÍVEL BIOSSEGURANÇA 3 NB-3",
+        "items": [
+          "Febre Amarela (manipulação cultivos)",
+          "Laboratório selado pressão negativa",
+          "Filtros HEPA entrada/saída",
+          "Roupas proteção descartáveis",
+          "Monitoramento médico funcionários"
+        ]
+      },
+      {
+        "title": "INATIVAÇÃO VIRAL",
+        "items": [
+          "Calor: 56°C/30min ou 100°C/5min",
+          "Químicos: Hipoclorito 05% etanol 70%",
+          "UVC: 254nm/30min",
+          "Autoclave: 121°C/15min/15psi"
+        ]
+      },
+      {
+        "title": "DOCUMENTAÇÃO OBRIGATÓRIA",
+        "items": [
+          "Inventário agentes biológicos",
+          "Registros acidentes/incidentes",
+          "Treinamentos biossegurança",
+          "Planos emergência",
+          "Licenças ambientais"
+        ]
+      }
+    ],
+    "highlights": [
+      "CLASSIFICAÇÃO RISCO Arbovírus = Grupo de Risco 23 (OMS)",
+      "ZERO ACIDENTES: Protocolo rígido + treinamento contínuo"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 28,
+    "title": "EPIDEMIOLOGIA: DESAFIOS ATUAIS",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "EVOLUÇÃO VIRAL CONTÍNUA",
+        "items": [
+          "Novas linhagens DENV",
+          "Escape imunológico",
+          "Virulência alterada",
+          "Adaptação climática"
+        ]
+      },
+      {
+        "title": "DISPERSÃO GLOBAL",
+        "items": [
+          "Viagens internacionais",
+          "Comércio (pneus bambu)",
+          "Mudanças climáticas",
+          "Urbanização descontrolada"
+        ]
+      },
+      {
+        "title": "SUBNOTIFICAÇÃO CRÔNICA",
+        "items": [
+          "Casos assintomáticos (80%)",
+          "Acesso limitado diagnóstico",
+          "Capacidade laboratorial",
+          "Variações regionais"
+        ]
+      }
+    ],
+    "highlights": [
+      "COCIRCULAÇÃO VIRAL 4+ vírus simultaneamente Sintomas clínicos sobrepostos Reações cruzadas sorológicas Diagnóstico diferencial complexo",
+      "Próxima seção: Estratégias controle e prevenção",
+      "CENÁRIOS FUTUROS Expansão geográfica + intensificação + emergência novos vírus"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 29,
+    "title": "CONTROLE VETORIAL: ESTRATÉGIA INTEGRADA",
+    "aluno_info": "ALUNO 5 - Controle Vetorial e Prevenção\n                Duração: 10:00 - 12:30",
+    "cards": [
+      {
+        "title": "1 CONTROLE FÍSICO",
+        "items": [
+          "Eliminação criadouros",
+          "Vedação caixas dágua",
+          "Telas mosquiteiros",
+          "Drenagem águas paradas"
+        ]
+      },
+      {
+        "title": "2 CONTROLE QUÍMICO",
+        "items": [
+          "Larvicidas (Bt metoprene)",
+          "Adulticidas (UBV termonebulização)",
+          "Repelentes pessoais",
+          "Rotação produtos (resistência)"
+        ]
+      },
+      {
+        "title": "3 CONTROLE BIOLÓGICO",
+        "items": [
+          "Bacillus thuringiensis",
+          "Peixes larvófagos (Poecilia)",
+          "Copépodes predadores",
+          "Fungos entomopatogênicos"
+        ]
+      },
+      {
+        "title": "4 CONTROLE GENÉTICO",
+        "items": [
+          "Técnica Inseto Estéril (SIT)",
+          "Mosquitos transgênicos",
+          "Gene drive systems",
+          "Wolbachia (IIT Population Replacement)"
+        ]
+      }
+    ],
+    "highlights": [
+      "SUCESSO = Combinação métodos + sustentabilidade + participação comunitária",
+      "ESTRATÉGIA OMS Gestão Integrada Vetores (IVM)"
+    ],
+    "reference": "Fontes: WHO Global Vector Control Response, 2017; Morrison et al., 2008. Am J Trop Med Hyg"
+  },
+  {
+    "number": 30,
+    "title": "INOVAÇÕES: CONTROLE GENÉTICO",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "MOSQUITOS TRANSGÊNICOS OX513A",
+        "items": [
+          "Gene tTAV letal dominante",
+          "Descendência morre antes reprodução",
+          "Redução população 9095%",
+          "Testes: Cayman Brasil Malásia"
+        ]
+      },
+      {
+        "title": "WOLBACHIA wMel wAlbB",
+        "items": [
+          "Bactéria intracelular obrigatória",
+          "Reduz carga viral 4075%",
+          "Incompatibilidade citoplasmática",
+          "World Mosquito Program"
+        ]
+      },
+      {
+        "title": "GENE DRIVE",
+        "items": [
+          "Sistema CRISPR/Cas9",
+          "Herança supermendeliana",
+          "Propagação população selvagem",
+          "Status: Pesquisa laboratorial"
+        ]
+      },
+      {
+        "title": "TÉCNICA INSETO ESTÉRIL SIT",
+        "items": [
+          "Irradiação gama machos",
+          "Esterilidade reprodutiva",
+          "Redução progênie",
+          "FAO/IAEA programa global"
+        ]
+      }
+    ],
+    "highlights": [
+      "DESAFIOS REGULATÓRIOS Aprovação ética científica Aceitação comunitária Impacto ambiental Biossegurança"
+    ],
+    "reference": "Fontes: Carvalho et al., 2015. PLoS Negl Trop Dis; Hoffmann et al., 2011. Cell"
+  },
+  {
+    "number": 31,
+    "title": "MANEJO RESISTÊNCIA: ESTRATÉGIAS MRI",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "ROTAÇÃO INSETICIDAS",
+        "items": [
+          "Ciclos 23 anos máximo",
+          "Diferentes modos ação",
+          "Monitoramento susceptibilidade",
+          "Mapas resistência regionais"
+        ]
+      },
+      {
+        "title": "NOVOS PRODUTOS",
+        "items": [
+          "Pirimifósmetil (organofosforado)",
+          "Clothianidin (neonicotinóide)",
+          "Spinosad (biológico)",
+          "Formulações timerelease"
+        ]
+      },
+      {
+        "title": "BIOENSAIOS PADRONIZADOS",
+        "items": [
+          "Teste suscetibilidade OMS",
+          "Dose diagnóstica (DD)",
+          "Tempo letal 50% (TL50)",
+          "Intensidade resistência"
+        ]
+      },
+      {
+        "title": "MECANISMOS MOLECULARES",
+        "items": [
+          "Sequenciamento gene kdr",
+          "Atividade esterases",
+          "Citocromo P450",
+          "GlutationaStransferase"
+        ]
+      }
+    ],
+    "highlights": [
+      "SITUAÇÃO CRÍTICA BRASIL 60% populações resistentes",
+      "ESTRATÉGIA MRI (WHO) Manejo próativo resistência Preservação susceptibilidade Uso racional inseticidas Alternativas nãoquímicas"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 32,
+    "title": "PREVENÇÃO: VACINAÇÃO DENGUE",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "DENGVAXIA Sanofi",
+        "items": [
+          "Vírus quimérico YF17D",
+          "4 sorotipos simultâneos",
+          "Eficácia: 60% global",
+          "Restricção: Soropositivos prévios",
+          "WHO: >9 anos + endêmica"
+        ]
+      },
+      {
+        "title": "QDENGA Takeda",
+        "items": [
+          "Vírus vivo atenuado DENV2",
+          "Aprovação: 2023 (ANVISA)",
+          "Eficácia: 7084% (sorotipos)",
+          "Indicação: 460 anos",
+          "Esquema: 2 doses (0 3 meses)"
+        ]
+      },
+      {
+        "title": "INCORPORAÇÃO SUS 2024",
+        "items": [
+          "Campanha nacional inédita",
+          "Meta: 32 milhões adolescentes",
+          "Idades: 1014 anos",
+          "Municípios >100mil hab."
+        ]
+      },
+      {
+        "title": "VACINAS FUTURAS",
+        "items": [
+          "TV003/TV005 (NIAID)",
+          "DENVax (Merck)",
+          "Vacinas DNA/mRNA",
+          "Plataformas vetores virais"
+        ]
+      }
+    ],
+    "highlights": [
+      "CONSIDERAÇÕES CRÍTICAS Não substitui controle vetorial Monitoramento segurança contínuo Educação profissionais saúde Vigilância póscomercialização",
+      "IMPACTO MODELADO Cobertura 70% = 4050% incidência dengue"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 33,
+    "title": "EDUCAÇÃO E MOBILIZAÇÃO SOCIAL",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "EDUCAÇÃO FORMAL",
+        "items": [
+          "Currículo escolar: arboviroses",
+          "Material didático adaptado",
+          "Capacitação professores",
+          "Projetos interdisciplinares",
+          "Ciência cidadã (MonitorAr)"
+        ]
+      },
+      {
+        "title": "COMUNICAÇÃO DIGITAL",
+        "items": [
+          "Apps móveis educativos",
+          "Redes sociais segmentadas",
+          "Gamificação prevenção",
+          "Influencers saúde",
+          "Realidade aumentada"
+        ]
+      },
+      {
+        "title": "MOBILIZAÇÃO COMUNITÁRIA",
+        "items": [
+          "Agentes comunitários saúde",
+          "Lideranças locais",
+          "Organizações religiosas",
+          "Associações moradores",
+          "Movimentos sociais"
+        ]
+      },
+      {
+        "title": "ESTRATÉGIAS CRIATIVAS",
+        "items": [
+          "Teatro educativo",
+          "Música e jingles",
+          "Concursos arte",
+          "Mascotes personagens",
+          "Campanhas virais"
+        ]
+      }
+    ],
+    "highlights": [
+      "MENSAGENSCHAVE EDUCAÇÃO Eliminar água parada (10 minutos/semana) Sintomas de alerta gravidade Procurar serviços saúde precocemente Não automedicação (aspirina proibida) Proteção individual (repelentes roupas)"
+    ],
+    "reference": "Fontes: Parks  Lloyd, 2004. Trop Med Int Health; Toledo et al., 2011. Cad Saúde Pública"
+  },
+  {
+    "number": 34,
+    "title": "POLÍTICAS PÚBLICAS: GOVERNANÇA MULTISETORIAL",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "MARCO LEGAL",
+        "items": [
+          "Lei 13.301/2016 (acesso domicílios)",
+          "Portaria 1.378/2013 (PNCD)",
+          "Decreto 7.616/2011 (emergência)",
+          "Resolução CIT 8/2017"
+        ]
+      },
+      {
+        "title": "FINANCIAMENTO",
+        "items": [
+          "Bloco custeio vigilância",
+          "Incentivo PAB variável",
+          "Emendas parlamentares",
+          "R 12 bilhão anual (estimado)"
+        ]
+      },
+      {
+        "title": "INTERSETORIALIDADE",
+        "items": [
+          "Saúde + Educação + Meio Ambiente",
+          "Saneamento + Habitação",
+          "Defesa Civil + Segurança",
+          "Comitês gestão integrada"
+        ]
+      },
+      {
+        "title": "MONITORAMENTO",
+        "items": [
+          "Pacto pela Saúde (indicadores)",
+          "Relatórios gestão trimestral",
+          "Avaliação externa",
+          "Transparência dados"
+        ]
+      }
+    ],
+    "highlights": [
+      "DESAFIOS GESTÃO Fragmentação responsabilidades Recursos insuficientes Capacidade técnica limitada Rotatividade gestores",
+      "FRAMEWORK BRASIL Plano Nacional Controle Dengue (PNCD)"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 35,
+    "title": "ONE HEALTH: ABORDAGEM INTEGRADA",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "INTERFACE HUMANO-ANIMAL",
+        "items": [
+          "Primatas nãohumanos (FA silvestre)",
+          "Animais peridomésticos",
+          "Vigilância zoológicos",
+          "Medicina veterinária"
+        ]
+      },
+      {
+        "title": "INTERFACE AMBIENTE",
+        "items": [
+          "Mudanças climáticas",
+          "Desmatamento e urbanização",
+          "Biodiversidade e ecossistemas",
+          "Poluição e saneamento"
+        ]
+      },
+      {
+        "title": "PESQUISA TRANSLACIONAL",
+        "items": [
+          "Modelos animais experimentais",
+          "Ecologia vetores",
+          "Dinâmica transmissão",
+          "Vacinas e antivirais"
+        ]
+      },
+      {
+        "title": "GOVERNANÇA INTEGRADA",
+        "items": [
+          "Comitês multissetoriais",
+          "Políticas interministeriais",
+          "Capacitação profissional",
+          "Financiamento conjunto"
+        ]
+      }
+    ],
+    "highlights": [
+      "BENEFÍCIOS ABORDAGEM Detecção precoce emergências Resposta coordenada eficaz Redução custos saúde Sustentabilidade ambiental Equidade e justiça social",
+      "Próxima seção: Conclusões e perspectivas futuras",
+      "ONE HEALTH = UMA SÓ SAÚDE Humanos + Animais + Ambiente = Saúde Global"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 36,
+    "title": "LIÇÕES APRENDIDAS: 30 ANOS DENGUE BRASIL",
+    "aluno_info": "ALUNO 6 - Conclusões e Perspectivas Futuras\n                Duração: 12:30 - 15:00",
+    "cards": [
+      {
+        "title": "DESAFIOS PERSISTENTES",
+        "items": [
+          "Controle vetorial insustentável",
+          "Resistência inseticidas crescente",
+          "Urbanização descontrolada",
+          "Mudanças climáticas aceleradas",
+          "Recursos limitados vs demanda"
+        ]
+      },
+      {
+        "title": "SUCESSOS ALCANÇADOS",
+        "items": [
+          "Sistema vigilância robusto",
+          "Capacidade diagnóstica ampliada",
+          "Redução mortalidade (<01%)",
+          "Manejo clínico padronizado",
+          "Vacinação incorporada SUS"
+        ]
+      },
+      {
+        "title": "INOVAÇÕES EMERGENTES",
+        "items": [
+          "Controle genético (Wolbachia)",
+          "Diagnóstico PointofCare",
+          "Modelagem preditiva IA",
+          "Telemedicina rural",
+          "Vacinas próxima geração"
+        ]
+      },
+      {
+        "title": "PERSPECTIVAS 2030",
+        "items": [
+          "Abordagem One Health",
+          "Sustentabilidade ambiental",
+          "Equidade acesso saúde",
+          "Preparação próximas pandemias",
+          "Cooperação internacional"
+        ]
+      }
+    ],
+    "highlights": [
+      "IMPACTO ACUMULADO 19902024 15M+ Casos dengue notificados"
+    ],
+    "reference": "Fontes: Bhatt et al., 2013. Nature; Stanaway et al., 2016. PLoS Negl Trop Dis"
+  },
+  {
+    "number": 37,
+    "title": "CENÁRIOS FUTUROS: 2025-2050",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "CENÁRIO INTERMEDIÁRIO",
+        "items": [
+          "Clima: +2°C controlado",
+          "Tecnologia: Controle genético",
+          "Vacinas: Multivalentes eficazes",
+          "Vigilância: IA preditiva",
+          "Cooperação: Global coordenada"
+        ]
+      }
+    ],
+    "highlights": [
+      "CENÁRIO PESSIMISTA Clima: +3°C até 2100 Expansão: Aedes → temperadas Casos: +2 bilhões expostos Novos vírus: Usutu Mayaro urbano Resistência: Total inseticidas",
+      "FATORES DETERMINANTES Compromisso político sustentado Investimento PD acelerado Ação climática efetiva Cooperação internacional Participação comunitária ativa",
+      "PESQUISAS PRIORITÁRIAS Vacinas universais + Antivirais específicos + Controle genético sustentável"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 38,
+    "title": "RECOMENDAÇÕES ESTRATÉGICAS",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "FORTALECIMENTO SISTEMAS SAÚDE",
+        "items": [
+          "Capacidade diagnóstica descentralizada",
+          "Manejo clínico padronizado",
+          "Vigilância genomica rotineira",
+          "Telemedicina áreas remotas",
+          "Formação profissional contínua"
+        ]
+      },
+      {
+        "title": "INOVAÇÃO CONTROLE VETORIAL",
+        "items": [
+          "Escalonamento Wolbachia",
+          "Desenvolvimento novos larvicidas",
+          "Manejo integrado resistência",
+          "Biocontrole sustentável",
+          "Monitoramento em tempo real"
+        ]
+      },
+      {
+        "title": "AMPLIAÇÃO VACINAÇÃO",
+        "items": [
+          "Cobertura nacional QDENGA",
+          "Vacinas próxima geração",
+          "Estratégias diferenciadas",
+          "Vigilância póscomercialização",
+          "Acesso equitativo"
+        ]
+      },
+      {
+        "title": "COOPERAÇÃO INTERNACIONAL",
+        "items": [
+          "Compartilhamento dados virológicos",
+          "Transferência tecnologia",
+          "Financiamento conjunto PD",
+          "Resposta coordenada emergências",
+          "Capacitação técnica mútua"
+        ]
+      }
+    ],
+    "highlights": [
+      "ROI: Cada dólar investido = 1015 dólares economizados",
+      "INVESTIMENTO NECESSÁRIO US 3050 bilhões globais (20252035) Retorno: US 300500 bilhões (custos evitados)"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 39,
+    "title": "AGENDA PESQUISA: PRÓXIMOS 10 ANOS",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "PRIORIDADE 1: VACINAS",
+        "items": [
+          "Panflavivírus única dose",
+          "Vacina nasal mucosa",
+          "Plataformas mRNA adaptáveis",
+          "Vacinas terapêuticas",
+          "Proteção esterilizante"
+        ]
+      },
+      {
+        "title": "PRIORIDADE 2: ANTIVIRAIS",
+        "items": [
+          "Inibidores NS5 polimerase",
+          "Moduladores resposta imune",
+          "Terapias RNA interferência",
+          "Anticorpos monoclonais",
+          "Formulações pediátricas"
+        ]
+      },
+      {
+        "title": "PRIORIDADE 3: VETORES",
+        "items": [
+          "Gene drive autolimitante",
+          "Wolbachia população replacement",
+          "Biocontrole fungos/vírus",
+          "Feromônios comportamento",
+          "Inseticidas próxima geração"
+        ]
+      },
+      {
+        "title": "PRIORIDADE 4: VIGILÂNCIA",
+        "items": [
+          "IA predição surtos",
+          "Sequenciamento tempo real",
+          "Sensores IoT ambientais",
+          "Diagnóstico molecular portátil",
+          "Plataformas integradas"
+        ]
+      }
+    ],
+    "highlights": [
+      "MARCOS 2030 Redução 75% incidência global Eliminação transmissão urbana FA Vacina universal flavivírus Antiviral oral eficaz Controle genético escalonado"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 40,
+    "title": "CALL TO ACTION: O QUE FAZER AGORA",
+    "aluno_info": "",
+    "cards": [
+      {
+        "title": "PROFISSIONAIS SAÚDE",
+        "items": [
+          "Capacitação diagnóstico diferencial",
+          "Manejo clínico baseado evidências",
+          "Vigilância epidemiológica ativa",
+          "Educação comunitária contínua",
+          "Advocacia políticas públicas"
+        ]
+      },
+      {
+        "title": "GESTORES PÚBLICOS",
+        "items": [
+          "Financiamento sustentável programas",
+          "Integração intersetorial efetiva",
+          "Planejamento baseado evidências",
+          "Transparência indicadores",
+          "Participação social institucionalizada"
+        ]
+      },
+      {
+        "title": "PESQUISADORES",
+        "items": [
+          "Pesquisa translacional acelerada",
+          "Colaboração multidisciplinar",
+          "Transferência tecnologia",
+          "Formação recursos humanos",
+          "Comunicação científica efetiva"
+        ]
+      },
+      {
+        "title": "SOCIEDADE CIVIL",
+        "items": [
+          "Eliminação criadouros domiciliares",
+          "Adesão vacinação recomendada",
+          "Procura serviços sintomas",
+          "Participação controle social",
+          "Disseminação informação científica"
+        ]
+      }
+    ],
+    "highlights": [
+      "NÃO HÁ TEMPO A PERDER: Cada ano atraso = milhões casos evitáveis",
+      "URGÊNCIA MÁXIMA Janela oportunidade 20252030 Ação agora = prevenção catástrofe futura"
+    ],
+    "reference": ""
+  },
+  {
+    "number": 41,
+    "title": "MENSAGEM FINAL",
+    "aluno_info": "",
+    "cards": [],
+    "highlights": [],
+    "reference": ""
+  },
+  {
+    "number": 42,
+    "title": "OBRIGADO",
+    "aluno_info": "ALUNO 1: Introdução e Conceitos Slides 1-7",
+    "cards": [],
+    "highlights": [
+      "CONTATO E DÚVIDAS Universidade Unigranrio• Enfermagem • Microbiologia e imunologia Professora: Roberta Rego",
+      "DURAÇÃO TOTAL: 15 MINUTOS Cada aluno: 25 minutos (±30 segundos)"
+    ],
+    "reference": "Fontes: Esta apresentação foi baseada em evidências científicas das principais publicações em arboviroses e saúde pública global"
+  }
+]

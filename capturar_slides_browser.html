@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captura de Slides - Arboviroses</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .capture-info {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .slide-navigation {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        .slide-navigation button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin: 2px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        iframe {
+            width: 1920px;
+            height: 1080px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            transform-origin: top left;
+            transform: scale(0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="capture-info">
+        <h1>🎬 Captura de Slides para Canva</h1>
+        <p><strong>Instruções:</strong></p>
+        <ol>
+            <li>Use F11 para tela cheia</li>
+            <li>Navegue pelos slides com os botões</li>
+            <li>Use Print Screen ou ferramenta de captura</li>
+            <li>Salve cada slide como PNG</li>
+            <li>Importe no Canva</li>
+        </ol>
+    </div>
+
+    <div class="slide-navigation">
+        <button onclick="previousSlide()">◀ Anterior</button>
+        <span id="slideCounter">Slide 1</span>
+        <button onclick="nextSlide()">Próximo ▶</button>
+        <br>
+        <button onclick="captureMode()">📸 Modo Captura</button>
+    </div>
+
+    <iframe id="slideFrame" src="slides_individuais/slide_01.html"></iframe>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 42;
+
+        function updateSlide() {
+            const slideNum = String(currentSlide).padStart(2, '0');
+            document.getElementById('slideFrame').src = `slides_individuais/slide_${slideNum}.html`;
+            document.getElementById('slideCounter').textContent = `Slide ${currentSlide}/${totalSlides}`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function previousSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        function captureMode() {
+            // Esconder navegação para captura limpa
+            document.querySelector('.slide-navigation').style.display = 'none';
+            document.querySelector('.capture-info').style.display = 'none';
+
+            setTimeout(() => {
+                alert('Agora capture a tela! Pressione OK para restaurar a navegação.');
+                document.querySelector('.slide-navigation').style.display = 'block';
+                document.querySelector('.capture-info').style.display = 'block';
+            }, 1000);
+        }
+
+        // Navegação por teclado
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === 'Space') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                previousSlide();
+            }
+        });
+    </script>
+</body>
+</html>

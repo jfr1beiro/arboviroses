@@ -1,0 +1,2741 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arboviroses Transmitidas por Mosquitos - Apresentação Completa</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f0f0;
+            overflow-x: hidden;
+        }
+
+        .floating-nav {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .float-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .home-btn {
+            background: rgba(52, 152, 219, 0.7);
+        }
+
+        .home-btn:hover {
+            background: rgba(52, 152, 219, 0.9);
+        }
+
+        .prev-btn {
+            background: rgba(231, 76, 60, 0.7);
+        }
+
+        .prev-btn:hover {
+            background: rgba(231, 76, 60, 0.9);
+        }
+
+        .next-btn {
+            background: rgba(46, 204, 113, 0.7);
+        }
+
+        .next-btn:hover {
+            background: rgba(46, 204, 113, 0.9);
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            box-sizing: border-box;
+            padding: 25px;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 768px) {
+            .slide {
+                padding: 15px;
+            }
+
+            .slide h1 {
+                font-size: 1.6em;
+                margin-bottom: 10px;
+            }
+
+            .slide h2 {
+                font-size: 1.3em;
+                margin-bottom: 8px;
+            }
+
+            .slide h3 {
+                font-size: 1.1em;
+                margin-bottom: 6px;
+            }
+
+            .slide p, .slide li {
+                font-size: 0.9em;
+                line-height: 1.3;
+                margin: 4px 0;
+            }
+
+            .floating-nav {
+                right: 10px;
+            }
+
+            .float-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 1em;
+            }
+
+            .virus-grid, .stats-grid, .innovation-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 8px;
+                margin: 8px 0;
+            }
+
+            .data-box {
+                padding: 8px;
+                margin: 6px;
+            }
+
+            .stat-card h3 {
+                font-size: 1.4em;
+                margin-bottom: 4px;
+            }
+
+            .virus-card, .innovation-card {
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .slide {
+                padding: 10px;
+            }
+
+            .slide h1 {
+                font-size: 1.5em;
+            }
+
+            .slide h2 {
+                font-size: 1.3em;
+            }
+
+            .floating-nav {
+                right: 5px;
+            }
+
+            .float-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9em;
+            }
+
+            .navigation {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .nav-btn {
+                width: 100%;
+                margin: 2px 0;
+            }
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        .slide-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 90%;
+            height: calc(100vh - 120px);
+            position: relative;
+            transform-origin: center;
+            transition: all 0.3s ease;
+            max-height: 100vh;
+            margin: 0 auto;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .slide h1 {
+            font-size: 2.6em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .slide h2 {
+            font-size: 2.1em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 18px;
+            line-height: 1.2;
+        }
+
+        .slide h3 {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .slide p, .slide li {
+            font-size: 1.1em;
+            line-height: 1.4;
+            text-align: center;
+            max-width: 1000px;
+            margin: 6px 0;
+        }
+
+        .slide ul {
+            text-align: left;
+            max-width: 800px;
+        }
+
+        /* Cores por seção */
+        .intro-slides {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+        }
+
+        .vector-slides {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+        }
+
+        .disease-slides {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+        }
+
+        .epidemio-slides {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            color: white;
+        }
+
+        .control-slides {
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: white;
+        }
+
+        .future-slides {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: white;
+        }
+
+        .data-box {
+            background: rgba(255,255,255,0.12);
+            padding: 18px;
+            border-radius: 12px;
+            margin: 12px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.25);
+            width: 90%;
+            max-width: 900px;
+        }
+
+        .highlight {
+            background: rgba(255,255,255,0.9);
+            color: #333;
+            padding: 4px 12px;
+            border-radius: 18px;
+            font-weight: bold;
+            margin: 0 4px;
+            display: inline-block;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin: 15px 0;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.12);
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.25);
+            backdrop-filter: blur(5px);
+        }
+
+        .stat-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .virus-grid, .stats-grid, .innovation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 5px 0;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .slide h1 {
+            margin: 5px 0;
+            padding: 5px;
+        }
+
+        .slide h2 {
+            margin: 5px 0;
+            padding: 5px;
+        }
+
+        .slide h3 {
+            margin: 5px 0;
+            padding: 5px;
+        }
+
+        .slide p, .slide li {
+            margin: 3px 0;
+        }
+
+        .virus-card, .stat-card, .innovation-card {
+            min-height: 0;
+            height: auto;
+            padding: 10px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .data-box {
+            padding: 10px;
+            margin: 5px 0;
+            width: 95%;
+            height: auto;
+        }
+
+        .data-box ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        .success-box, .warning-box {
+            margin: 5px 0;
+            padding: 10px;
+        }
+
+        .virus-card, .stat-card, .innovation-card {
+            background: rgba(255,255,255,0.12);
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.25);
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .data-box {
+            background: rgba(255,255,255,0.12);
+            padding: 15px;
+            border-radius: 12px;
+            margin: 15px 0;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.25);
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        .virus-card, .stat-card, .innovation-card, .timeline-item {
+            padding: 8px;
+            font-size: 0.9em;
+            line-height: 1.2;
+        }
+
+        .virus-card h3, .stat-card h3, .innovation-card h3 {
+            font-size: 1.1em;
+            margin-bottom: 4px;
+        }
+
+        .virus-card p, .stat-card p, .innovation-card p {
+            margin: 2px 0;
+            font-size: 0.85em;
+        }
+
+        .data-box {
+            padding: 8px;
+            margin: 6px 0;
+            width: 95%;
+        }
+
+        .data-box h3 {
+            font-size: 1.1em;
+            margin-bottom: 4px;
+        }
+
+        .data-box p, .data-box li {
+            font-size: 0.85em;
+            margin: 2px 0;
+            line-height: 1.2;
+        }
+
+        .comparison-table {
+            font-size: 0.85em;
+            width: 95%;
+            margin: 8px 0;
+        }
+
+        .comparison-table th, .comparison-table td {
+            padding: 4px;
+        }
+
+        .virus-card {
+            background: rgba(255,255,255,0.12);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid rgba(255,255,255,0.25);
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .timeline-item {
+            background: rgba(255,255,255,0.15);
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            margin: 4px;
+            backdrop-filter: blur(5px);
+            min-width: 140px;
+        }
+
+        .classification-tree {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .floating-nav {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .float-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .home-btn {
+            background: rgba(52, 152, 219, 0.7);
+        }
+
+        .home-btn:hover {
+            background: rgba(52, 152, 219, 0.9);
+        }
+
+        .prev-btn {
+            background: rgba(231, 76, 60, 0.7);
+        }
+
+        .prev-btn:hover {
+            background: rgba(231, 76, 60, 0.9);
+        }
+
+        .next-btn {
+            background: rgba(46, 204, 113, 0.7);
+        }
+
+        .next-btn:hover {
+            background: rgba(46, 204, 113, 0.9);
+        }
+
+        .family-group {
+            background: rgba(255,255,255,0.12);
+            padding: 16px;
+            border-radius: 12px;
+            border-left: 6px solid;
+            text-align: left;
+        }
+
+        .family-group.flaviviridae { border-left-color: #f39c12; }
+        .family-group.togaviridae { border-left-color: #27ae60; }
+        .family-group.peribunyaviridae { border-left-color: #3498db; }
+        .family-group.phenuiviridae { border-left-color: #9b59b6; }
+
+        .footer {
+            background: rgba(0,0,0,0.85);
+            color: white;
+            padding: 8px 15px;
+            font-size: 0.85em;
+            text-align: left;
+            width: 100%;
+            line-height: 1.2;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-btn {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-btn:hover {
+            background: rgba(0,0,0,0.9);
+            transform: scale(1.05);
+        }
+
+        .slide-counter {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            z-index: 1000;
+            font-size: 1em;
+        }
+
+        .floating-nav {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .float-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .home-btn {
+            background: rgba(52, 152, 219, 0.7);
+        }
+
+        .home-btn:hover {
+            background: rgba(52, 152, 219, 0.9);
+        }
+
+        .prev-btn {
+            background: rgba(231, 76, 60, 0.7);
+        }
+
+        .prev-btn:hover {
+            background: rgba(231, 76, 60, 0.9);
+        }
+
+        .next-btn {
+            background: rgba(46, 204, 113, 0.7);
+        }
+
+        .next-btn:hover {
+            background: rgba(46, 204, 113, 0.9);
+        }
+
+        .logo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 0.85em;
+            opacity: 0.9;
+            background: rgba(0,0,0,0.6);
+            padding: 6px 12px;
+            border-radius: 12px;
+        }
+
+        .mosquito-icon {
+            font-size: 3.5em;
+            margin: 15px 0;
+            opacity: 0.8;
+        }
+
+        .symptom-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            width: 100%;
+            max-width: 800px;
+            margin: 15px 0;
+        }
+
+        .symptom-item {
+            background: rgba(255,255,255,0.12);
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.25);
+        }
+
+        .comparison-table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.95em;
+        }
+
+        .comparison-table th {
+            background: rgba(255,255,255,0.2);
+            font-weight: bold;
+        }
+
+        .checklist {
+            text-align: left;
+            font-size: 1.1em;
+            line-height: 1.6;
+            background: rgba(255,255,255,0.1);
+            padding: 16px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .warning-box {
+            background: rgba(255,0,0,0.15);
+            border: 2px solid rgba(255,0,0,0.4);
+            padding: 16px;
+            border-radius: 12px;
+            margin: 15px 0;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .success-box {
+            background: rgba(0,255,0,0.15);
+            border: 2px solid rgba(0,255,0,0.4);
+            padding: 16px;
+            border-radius: 12px;
+            margin: 15px 0;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .innovation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 1000px;
+            margin: 15px 0;
+        }
+
+        .innovation-card {
+            background: rgba(255,255,255,0.12);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid rgba(255,255,255,0.25);
+            transition: transform 0.3s ease;
+        }
+
+        .innovation-card:hover {
+            transform: scale(1.03);
+        }
+
+        .percentage-bar {
+            width: 100%;
+            height: 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 8px 0;
+        }
+
+        .percentage-fill {
+            height: 100%;
+            background: rgba(255,255,255,0.8);
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+
+        .phase-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+        }
+
+        .phase-item {
+            background: rgba(255,255,255,0.12);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 5px solid rgba(255,255,255,0.6);
+        }
+
+        @media (max-width: 768px) {
+            .slide h1 { font-size: 2.2em; }
+            .slide h2 { font-size: 1.8em; }
+            .slide p, .slide li { font-size: 1em; }
+            .virus-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDES 1-6: INTRODUÇÃO (já criados anteriormente) -->
+    
+    <!-- SLIDE 1 - Título Principal -->
+    <div class="slide intro-slides active">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h1>ARBOVIROSES TRANSMITIDAS POR MOSQUITOS</h1>
+            <p style="font-size: 1.6em; margin: 20px 0;">O Maior Desafio da Saúde Pública no Século XXI</p>
+            <div class="mosquito-icon">🦟</div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>7,6 MILHÕES</h3>
+                    <p>Casos globais reportados à OMS até abril/2024</p>
+                </div>
+                <div class="stat-card">
+                    <h3>139.241</h3>
+                    <p>Casos prováveis no Brasil (SE 01-04/2025)</p>
+                </div>
+                <div class="stat-card">
+                    <h3>545</h3>
+                    <p>Espécies de arbovírus identificadas mundialmente</p>
+                </div>
+                <div class="stat-card">
+                    <h3>134</h3>
+                    <p>Espécies patogênicas para humanos</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> World Health Organization. Dengue - global situation. Disease Outbreak News. 2024. | Ministério da Saúde do Brasil. Informe Semanal sobre arboviroses - SE 01 a 04/2025.
+        </div>
+    </div>
+
+    <!-- SLIDE 2 - Definição Conceitual -->
+    <div class="slide intro-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>DEFINIÇÃO E CONCEITO FUNDAMENTAL</h2>
+            <div class="data-box">
+                <h3>ARBOVÍRUS = <span class="highlight">AR</span>thropod-<span class="highlight">BO</span>rne VIRUS</h3>
+                <p style="font-size: 1.4em;">Vírus que completam parte essencial do seu ciclo de replicação nos artrópodes hematófagos</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>545</h3>
+                    <p>Espécies conhecidas globalmente</p>
+                </div>
+                <div class="stat-card">
+                    <h3>150</h3>
+                    <p>Causam doenças em humanos</p>
+                </div>
+                <div class="stat-card">
+                    <h3>210</h3>
+                    <p>Espécies identificadas no Brasil</p>
+                </div>
+                <div class="stat-card">
+                    <h3>36</h3>
+                    <p>Relacionadas a doenças humanas no Brasil</p>
+                </div>
+            </div>
+            <div class="highlight" style="font-size: 1.3em; margin-top: 20px;">
+                GRUPO POLIFILÉTICO: Múltiplas famílias virais evolutivamente distintas
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Lopes N, Nozawa C, Linhares REC. Características gerais e epidemiologia dos arbovírus emergentes no Brasil. Rev Pan-Amaz Saude. 2014;5(3):55-64.
+        </div>
+    </div>
+
+    <!-- SLIDE 3 - Classificação Taxonômica -->
+    <div class="slide intro-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>CLASSIFICAÇÃO TAXONÔMICA DOS ARBOVÍRUS</h2>
+            <div class="classification-tree">
+                <div class="family-group flaviviridae">
+                    <h3>🟡 FAMÍLIA FLAVIVIRIDAE</h3>
+                    <p><strong>Gênero:</strong> Orthoflavivirus | <strong>Genoma:</strong> RNA fita simples (+), 11kb</p>
+                    <p><strong>Principais espécies:</strong> Dengue (DENV-1,2,3,4), Zika (ZIKV), Febre Amarela (YFV), West Nile (WNV)</p>
+                </div>
+                <div class="family-group togaviridae">
+                    <h3>🟢 FAMÍLIA TOGAVIRIDAE</h3>
+                    <p><strong>Gênero:</strong> Alphavirus | <strong>Genoma:</strong> RNA fita simples (+), 12kb</p>
+                    <p><strong>Principais espécies:</strong> Chikungunya (CHIKV), Mayaro (MAYV), Eastern Equine Encephalitis</p>
+                </div>
+                <div class="family-group peribunyaviridae">
+                    <h3>🔵 FAMÍLIA PERIBUNYAVIRIDAE</h3>
+                    <p><strong>Gênero:</strong> Orthobunyavirus | <strong>Genoma:</strong> RNA fita simples (-), tripartido</p>
+                    <p><strong>Principais espécies:</strong> Oropouche (OROV), La Crosse, Tahyna</p>
+                </div>
+                <div class="family-group phenuiviridae">
+                    <h3>🟣 FAMÍLIA PHENUIVIRIDAE</h3>
+                    <p><strong>Gênero:</strong> Phlebovirus | <strong>Genoma:</strong> RNA fita simples (-), tripartido</p>
+                    <p><strong>Principais espécies:</strong> Rift Valley Fever, Sandfly Fever Naples</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Murugesan R, et al. Arboviruses and COVID-19: Global Health Challenges and Human Enhancement Technologies. Bioengineering. 2025;12(7):725.
+        </div>
+    </div>
+
+    <!-- SLIDE 4 - Cenário Global -->
+    <div class="slide intro-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>CENÁRIO EPIDEMIOLÓGICO GLOBAL 2024-2025</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>7,6 MILHÕES</h3>
+                    <p>Casos reportados à OMS (jan-abr/2024)</p>
+                </div>
+                <div class="stat-card">
+                    <h3>3,4 MILHÕES</h3>
+                    <p>Casos confirmados laboratorialmente</p>
+                </div>
+                <div class="stat-card">
+                    <h3>+16.000</h3>
+                    <p>Casos graves notificados</p>
+                </div>
+                <div class="stat-card">
+                    <h3>+3.000</h3>
+                    <p>Óbitos confirmados</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Distribuição Geográfica Global</h3>
+                <ul>
+                    <li><strong>Sudeste Asiático:</strong> 75% dos casos globais de dengue (Singapura, Tailândia, Vietnã)</li>
+                    <li><strong>América Latina:</strong> Brasil lidera com 40% dos casos mundiais</li>
+                    <li><strong>Pacífico Ocidental:</strong> Surtos explosivos em Filipinas, Austrália</li>
+                    <li><strong>África:</strong> Burkina Faso, Senegal - subnotificação histórica</li>
+                    <li><strong>Europa:</strong> Casos autóctones em França, Itália, Croácia</li>
+                </ul>
+            </div>
+            <div class="warning-box">
+                <p><strong>ALERTA OMS:</strong> Arboviroses representam ameaça crescente com potencial pandêmico devido às mudanças climáticas, urbanização e resistência vetorial.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> WHO Global Arbovirus Initiative. Geneva: WHO; 2022. | WHO Dengue - global situation. Disease Outbreak News. 2024.
+        </div>
+    </div>
+
+    <!-- SLIDE 5 - Brasil 2025 -->
+    <div class="slide intro-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>PANORAMA EPIDEMIOLÓGICO BRASIL 2025</h2>
+            <p style="font-size: 1.3em; margin-bottom: 20px;"><strong>Semanas Epidemiológicas 01-04/2025</strong></p>
+            <div class="virus-grid">
+                <div class="virus-card" style="border-color: #e74c3c;">
+                    <h3>🔴 DENGUE</h3>
+                    <p><strong>139.241 casos prováveis</strong></p>
+                    <p>Taxa: 68,6 casos/100 mil hab.</p>
+                    <p>Óbitos: 21 confirmados, 160 investigação</p>
+                    <p><strong>Estados críticos:</strong> Acre, São Paulo, Mato Grosso</p>
+                    <p><strong>Sorotipos circulantes:</strong> DENV-1, DENV-2, DENV-3 (aumento)</p>
+                </div>
+                <div class="virus-card" style="border-color: #27ae60;">
+                    <h3>🟢 CHIKUNGUNYA</h3>
+                    <p><strong>8.498 casos prováveis</strong></p>
+                    <p>Taxa: 4,2 casos/100 mil hab.</p>
+                    <p>Óbitos: 11 em investigação</p>
+                    <p><strong>Regiões afetadas:</strong> Nordeste, Sudeste, Centro-Oeste</p>
+                </div>
+            </div>
+            <div class="virus-grid">
+                <div class="virus-card" style="border-color: #e67e22;">
+                    <h3>🟠 OROPOUCHE (EMERGENTE)</h3>
+                    <p><strong>2.791 notificações</strong></p>
+                    <p>Crescimento: ↑74% vs 2024</p>
+                    <p><strong>Distribuição:</strong> ES (95%), RJ (99), MG (30)</p>
+                    <p><strong>Marco histórico:</strong> Primeiras mortes mundiais (2 óbitos BA)</p>
+                    <p><strong>Transmissão vertical confirmada</strong></p>
+                </div>
+                <div class="virus-card" style="border-color: #f1c40f;">
+                    <h3>🟡 FEBRE AMARELA</h3>
+                    <p><strong>4 óbitos confirmados</strong> (SP, 2024/2025)</p>
+                    <p><strong>Transmissão silvestre detectada:</strong> MG, SP, RR, TO</p>
+                    <p><strong>Ciclo urbano:</strong> Eliminado desde 1942</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Ministério da Saúde do Brasil. Informe Semanal sobre arboviroses - SE 01 a 04/2025. Brasília: MS; 2025.
+        </div>
+    </div>
+
+    <!-- SLIDE 6 - Fatores de Emergência -->
+    <div class="slide intro-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>FATORES DETERMINANTES DA EMERGÊNCIA GLOBAL</h2>
+            <div class="innovation-grid">
+                <div class="innovation-card">
+                    <h3>🌡️ MUDANÇAS CLIMÁTICAS</h3>
+                    <p><strong>+1,1°C temperatura global</strong> (1880-2020)</p>
+                    <p>• Expansão zona tropical: 2-5° latitude</p>
+                    <p>• Eventos extremos ↑ frequência</p>
+                    <p>• Altitude limite: 1.000m → 2.000m</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>🏙️ URBANIZAÇÃO</h3>
+                    <p><strong>68% população urbana</strong> até 2050</p>
+                    <p>• Saneamento deficiente</p>
+                    <p>• +300% criadouros artificiais</p>
+                    <p>• Densidade populacional ↑</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>🦟 ADAPTAÇÃO VETORIAL</h3>
+                    <p><strong>60% populações resistentes</strong></p>
+                    <p>• Resistência inseticidas</p>
+                    <p>• Expansão geográfica</p>
+                    <p>• Competência vetorial ↑</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>✈️ GLOBALIZAÇÃO</h3>
+                    <p><strong>Dispersão intercontinental</strong></p>
+                    <p>• Viagens internacionais ↑</p>
+                    <p>• Comércio global intenso</p>
+                    <p>• Migração populacional</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>🧬 EVOLUÇÃO VIRAL</h3>
+                    <p><strong>Novas cepas virulentas</strong></p>
+                    <p>• Escape imunológico</p>
+                    <p>• Adaptação hospedeiros</p>
+                    <p>• Mutações proteínas NS</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>💰 DETERMINANTES SOCIAIS</h3>
+                    <p><strong>Desigualdade crescente</strong></p>
+                    <p>• IDH baixo = incidência alta</p>
+                    <p>• Acesso saúde limitado</p>
+                    <p>• Políticas inadequadas</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Climate Change and Arbovirus: A Review and Bibliometric Analysis. Climate. 2025;13(2):35.
+        </div>
+    </div>
+
+    <!-- SLIDES 7-12: AEDES AEGYPTI -->
+
+    <!-- SLIDE 7 - Morfologia Aedes -->
+    <div class="slide vector-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>AEDES AEGYPTI: ANÁLISE MORFOLÓGICA DETALHADA</h2>
+            <div class="mosquito-icon">🦟</div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>4-7 mm</h3>
+                    <p>Comprimento total adulto</p>
+                </div>
+                <div class="stat-card">
+                    <h3>2-3 mg</h3>
+                    <p>Peso corporal médio</p>
+                </div>
+                <div class="stat-card">
+                    <h3>2-5 μl</h3>
+                    <p>Volume sangue/repasto</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100-200m</h3>
+                    <p>Raio voo típico</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Características Anatômicas Diagnósticas</h3>
+                <ul>
+                    <li><strong>Escamas:</strong> Listras branco-prateadas diagnósticas em patas e tórax</li>
+                    <li><strong>Probóscide:</strong> Serrilhada, altamente adaptada para perfuração eficiente</li>
+                    <li><strong>Palpos:</strong> Curtos em fêmeas (vs. Anopheles: palpos longos)</li>
+                    <li><strong>Asas:</strong> Transparentes, escamas escuras, sem manchas características</li>
+                    <li><strong>Abdome:</strong> Capacidade distensão 3x para armazenamento sangue</li>
+                </ul>
+            </div>
+            <div class="highlight" style="margin-top: 15px; font-size: 1.2em;">
+                COMPETÊNCIA VETORIAL ÚNICA: Transmissão simultânea de 4 vírus diferentes
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Manouana GP, et al. Ecology of arboviruses and their potential mosquito vectors in Benin, Côte d'Ivoire and Gabon. Front Trop Dis. 2024;5:1355778.
+        </div>
+    </div>
+
+    <!-- SLIDE 8 - Bioecologia -->
+    <div class="slide vector-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>BIOECOLOGIA E PADRÕES COMPORTAMENTAIS</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>🌅 06h-10h</h3>
+                    <p><strong>Pico Matinal</strong></p>
+                    <p>Máxima atividade hematofágica</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>☀️ 10h-15h</h3>
+                    <p><strong>Repouso Diurno</strong></p>
+                    <p>Abrigo locais frescos/sombrios</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>🌇 15h-19h</h3>
+                    <p><strong>Pico Vespertino</strong></p>
+                    <p>Segunda janela alimentar</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>🌙 Noturno</h3>
+                    <p><strong>Inatividade</strong></p>
+                    <p>Diferencial vs. Anopheles</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>🏠 ENDOFILIA</h3>
+                    <p>Preferência intradomiciliar</p>
+                    <p>Repouso: roupas, cortinas, móveis escuros</p>
+                </div>
+                <div class="stat-card">
+                    <h3>👥 ANTROPOFILIA</h3>
+                    <p>95% preferência sangue humano</p>
+                    <p>Detecção: CO₂, calor, ácido lático</p>
+                </div>
+                <div class="stat-card">
+                    <h3>🌡️ TERMOFILIA</h3>
+                    <p>Zona ótima: 25-30°C</p>
+                    <p>>35°C = mortalidade elevada</p>
+                </div>
+                <div class="stat-card">
+                    <h3>💧 HIGROFILIA</h3>
+                    <p>Umidade ideal: >60%</p>
+                    <p>Dessecação crítica <50%</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <p><strong>DIMORFISMO SEXUAL:</strong> ♀ hematófagas (proteínas para vitelogênese) | ♂ nectarívoros (carboidratos para energia)</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Puig-Torrents M, Díez J. Controlling arbovirus infection: high-throughput transcriptome and proteome insights. Front Microbiol. 2024;15:1330303.
+        </div>
+    </div>
+
+    <!-- SLIDE 9 - Ciclo de Vida -->
+    <div class="slide vector-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>CICLO BIOLÓGICO: METAMORFOSE COMPLETA</h2>
+            <div class="phase-timeline">
+                <div class="phase-item">
+                    <h3>1️⃣ FASE OVO (1-2 dias)</h3>
+                    <p><strong>Características:</strong> Resistência extrema à dessecação (até 450 dias secos)</p>
+                    <p><strong>Postura:</strong> 50-150 ovos por ciclo gonotrófico, em superfícies próximas à água</p>
+                    <p><strong>Eclosão:</strong> Dependente de submersão e estímulos químicos</p>
+                </div>
+                <div class="phase-item">
+                    <h3>2️⃣ FASE LARVAL (3-5 dias, 4 estádios)</h3>
+                    <p><strong>Alimentação:</strong> Filtradora - detritos orgânicos, bactérias, algas</p>
+                    <p><strong>Respiração:</strong> Sifão respiratório na superfície da água</p>
+                    <p><strong>Desenvolvimento:</strong> Dependente temperatura (25°C = ótimo)</p>
+                </div>
+                <div class="phase-item">
+                    <h3>3️⃣ FASE PUPAL (1-2 dias)</h3>
+                    <p><strong>Metabolismo:</strong> Não se alimenta, apenas respiração e metamorfose</p>
+                    <p><strong>Mobilidade:</strong> Natação limitada para escape de predadores</p>
+                    <p><strong>Transformação:</strong> Reorganização completa sistemas orgânicos</p>
+                </div>
+                <div class="phase-item">
+                    <h3>4️⃣ FASE ADULTA (30-45 dias ♀, 15-20 dias ♂)</h3>
+                    <p><strong>Maturação sexual:</strong> 2-3 dias pós-emergência</p>
+                    <p><strong>Ciclo gonotrófico:</strong> 2-3 dias (sangue → ovos maduros)</p>
+                    <p><strong>Dispersão ativa:</strong> 100-800m (máximo documentado)</p>
+                </div>
+            </div>
+            <div class="warning-box">
+                <p><strong>PONTO CRÍTICO:</strong> Eliminação da água = quebra obrigatória do ciclo = controle populacional efetivo</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Leon Juarez M, et al. Cellular, molecular and immunological aspects in arboviruses infection. Front Cell Infect Microbiol. 2022;12:973953.
+        </div>
+    </div>
+
+    <!-- SLIDE 10 - Criadouros Detalhados -->
+    <div class="slide vector-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>ANÁLISE QUANTITATIVA DE CRIADOUROS URBANOS</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>35%</h3>
+                    <p><strong>🏺 VASOS/PRATINHOS</strong></p>
+                    <p>Água limpa renovada, sombreamento parcial</p>
+                </div>
+                <div class="stat-card">
+                    <h3>25%</h3>
+                    <p><strong>🛞 PNEUS VELHOS</strong></p>
+                    <p>Chuva acumulada, proteção predadores</p>
+                </div>
+                <div class="stat-card">
+                    <h3>20%</h3>
+                    <p><strong>🚰 CAIXAS D'ÁGUA</strong></p>
+                    <p>Destampadas, água permanente</p>
+                </div>
+                <div class="stat-card">
+                    <h3>8%</h3>
+                    <p><strong>🏠 CALHAS/LAJES</strong></p>
+                    <p>Entupimento, empoçamento</p>
+                </div>
+            </div>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>CARACTERÍSTICAS PREFERENCIAIS</h3>
+                    <p>• Água limpa (baixa matéria orgânica)</p>
+                    <p>• Recipientes artificiais</p>
+                    <p>• Sombreamento parcial</p>
+                    <p>• Baixa turbulência</p>
+                    <p>• <100m residências humanas</p>
+                </div>
+                <div class="virus-card">
+                    <h3>PARÂMETROS CRÍTICOS</h3>
+                    <p>• Volume mínimo: 1mL</p>
+                    <p>• pH ótimo: 6,5-8,5</p>
+                    <p>• Temperatura: 20-35°C</p>
+                    <p>• Oxigênio dissolvido: >3mg/L</p>
+                    <p>• Salinidade: <0,5‰</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Distribuição Nacional</h3>
+                <p><strong>3.587 municípios</strong> com presença confirmada (89% dos municípios brasileiros)</p>
+                <p><strong>Limitação altitudinal:</strong> Raramente acima de 2.200m (baixa densidade oxigênio)</p>
+                <p><strong>Zonas livres:</strong> Regiões montanhosas >1.800m, clima semiárido extremo</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Ministério da Saúde do Brasil. The greatest Dengue epidemic in Brazil: Surveillance, Prevention, and Control. Rev Saude Publica. 2024.
+        </div>
+    </div>
+
+    <!-- SLIDE 11 - Competência Vetorial Molecular -->
+    <div class="slide vector-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>COMPETÊNCIA VETORIAL: MECANISMOS MOLECULARES</h2>
+            <div class="phase-timeline">
+                <div class="phase-item">
+                    <h3>FASE 1: INFECÇÃO (Dia 0)</h3>
+                    <p><strong>Ingestão:</strong> Sangue virêmico (>10⁵ cópias RNA/mL)</p>
+                    <p><strong>Local inicial:</strong> Epitélio intestinal médio</p>
+                    <p><strong>Receptores:</strong> Proteínas de superfície celular específicas</p>
+                </div>
+                <div class="phase-item">
+                    <h3>FASE 2: REPLICAÇÃO INTESTINAL (Dias 1-7)</h3>
+                    <p><strong>Multiplicação:</strong> Células epiteliais intestino médio</p>
+                    <p><strong>Barreira intestinal:</strong> Superação para disseminação sistêmica</p>
+                    <p><strong>Fatores:</strong> Microbiota, imunidade inata do mosquito</p>
+                </div>
+                <div class="phase-item">
+                    <h3>FASE 3: DISSEMINAÇÃO (Dias 7-12)</h3>
+                    <p><strong>Migração:</strong> Hemocele → glândulas salivares</p>
+                    <p><strong>Barreira salivar:</strong> Última barreira antes transmissão</p>
+                    <p><strong>Replicação:</strong> Células acinares das glândulas</p>
+                </div>
+                <div class="phase-item">
+                    <h3>FASE 4: TRANSMISSÃO (Dias 12-45)</h3>
+                    <p><strong>Competência:</strong> Vírus viável na saliva</p>
+                    <p><strong>Persistência:</strong> Vitalícia uma vez estabelecida</p>
+                    <p><strong>Eficiência:</strong> 10³-10⁴ partículas virais por picada</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Fatores Moduladores da Competência</h3>
+                <p><strong>Temperatura:</strong> 1°C ↑ = 2-3 dias ⬇ período extrínseco | <strong>Genótipo:</strong> Variabilidade populacional</p>
+                <p><strong>Cepa viral:</strong> Adaptação específica vírus-vetor | <strong>Microbiota:</strong> Wolbachia reduz competência</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Cenci Dietrich V, et al. Pathogenesis and clinical management of arboviral diseases. World J Virol. 2025;14(1):100489.
+        </div>
+    </div>
+
+    <!-- SLIDE 12 - Múltiplas Epidemias -->
+    <div class="slide vector-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>FENÔMENO ÚNICO: 1 VETOR = 4 EPIDEMIAS SIMULTÂNEAS</h2>
+            <div class="mosquito-icon">🦟</div>
+            <div class="virus-grid">
+                <div class="virus-card" style="border-color: #e74c3c;">
+                    <h3>🔴 DENGUE</h3>
+                    <p><strong>1.658.816 casos</strong> (Brasil 2023)</p>
+                    <p>4 sorotipos co-circulantes</p>
+                    <p>ADE: amplificação dependente anticorpos</p>
+                    <p>Mortalidade: 0,05-5% conforme forma/tratamento</p>
+                </div>
+                <div class="virus-card" style="border-color: #3498db;">
+                    <h3>🔵 ZIKA</h3>
+                    <p><strong>>3.500 casos microcefalia</strong> (Brasil)</p>
+                    <p>Síndrome congênita confirmada</p>
+                    <p>Guillain-Barré: ↑20x incidência normal</p>
+                    <p>Neurotropismo via barreira hematoencefálica</p>
+                </div>
+                <div class="virus-card" style="border-color: #27ae60;">
+                    <h3>🟢 CHIKUNGUNYA</h3>
+                    <p><strong>40-60% cronificação</strong> articular</p>
+                    <p>Incapacidade funcional meses-anos</p>
+                    <p>Persistência: sinovite crônica</p>
+                    <p>Mortalidade: <0,1% (idosos ↑ risco)</p>
+                </div>
+                <div class="virus-card" style="border-color: #f39c12;">
+                    <h3>🟡 FEBRE AMARELA</h3>
+                    <p><strong>Ciclo urbano eliminado</strong> (1942)</p>
+                    <p>Silvestre: casos esporádicos</p>
+                    <p>Mortalidade: 20-50% formas graves</p>
+                    <p>Risco reintrodução urbana persistente</p>
+                </div>
+            </div>
+            <div class="warning-box">
+                <p style="font-size: 1.3em;"><strong>CO-CIRCULAÇÃO VIRAL:</strong> Diagnóstico diferencial complexo devido a sintomas similares e reações cruzadas sorológicas. Possibilidade de co-infecção simultânea.</p>
+            </div>
+            <div class="success-box">
+                <p><strong>VANTAGEM ESTRATÉGICA:</strong> Controle efetivo de um único vetor controla simultaneamente quatro doenças distintas</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Comprehensive overview of the burden, prevention, and therapeutic aspects of arboviral diseases in India. Commun Med (Lond). 2025;5:254.
+        </div>
+    </div>
+
+    <!-- SLIDES 13-24: DOENÇAS INDIVIDUAIS -->
+
+    <!-- SLIDE 13 - Dengue: Patogênese -->
+    <div class="slide disease-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>DENGUE: PATOGÊNESE MOLECULAR E IMUNOLÓGICA</h2>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>ESTRUTURA VIRAL</h3>
+                    <p><strong>Genoma:</strong> RNA (+) 11kb</p>
+                    <p><strong>Proteínas:</strong> 3 estruturais, 7 não-estruturais</p>
+                    <p><strong>Envelope:</strong> Proteínas E e prM</p>
+                    <p><strong>Sorotipos:</strong> DENV-1, 2, 3, 4</p>
+                </div>
+                <div class="virus-card">
+                    <h3>TROPISMO CELULAR</h3>
+                    <p><strong>Alvos primários:</strong> Monócitos, macrófagos</p>
+                    <p><strong>Receptores:</strong> DC-SIGN, Hsp90, Hsp70</p>
+                    <p><strong>Secundários:</strong> Células dendríticas, hepatócitos</p>
+                    <p><strong>Barreira:</strong> Endotélio vascular</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Mecanismos Patogênicos Chave</h3>
+                <ul>
+                    <li><strong>ADE (Antibody-Dependent Enhancement):</strong> Anticorpos não-neutralizantes facilitam infecção</li>
+                    <li><strong>Tempestade de citocinas:</strong> TNF-α, IL-6, IL-1β elevados</li>
+                    <li><strong>Disfunção endotelial:</strong> Aumento permeabilidade vascular</li>
+                    <li><strong>Coagulopatia:</strong> Consumo fatores coagulação, trombocitopenia</li>
+                    <li><strong>NS1 solúvel:</strong> Proteína não-estrutural circulante, disfunção endotelial</li>
+                </ul>
+            </div>
+            <div class="warning-box">
+                <p><strong>ADE CRÍTICO:</strong> Infecção secundária com sorotipo diferente pode resultar em doença mais grave devido ao enhancement mediado por anticorpos.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Srichawla BS, et al. Neuroinvasion of emerging and re-emerging arboviruses: A scoping review. SAGE Open Med. 2024;12:20503121241229847.
+        </div>
+    </div>
+
+    <!-- SLIDE 14 - Dengue: Manifestações Clínicas -->
+    <div class="slide disease-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>DENGUE: ESPECTRO CLÍNICO E CLASSIFICAÇÃO</h2>
+            <div class="phase-timeline">
+                <div class="phase-item">
+                    <h3>DENGUE SEM SINAIS DE ALARME (90% dos casos)</h3>
+                    <p><strong>Fase febril:</strong> Febre 39-40°C (2-7 dias), cefaleia intensa, mialgia, artralgia</p>
+                    <p><strong>Sintomas associados:</strong> Dor retroorbital, anorexia, náuseas, exantema tardio</p>
+                    <p><strong>Prova do laço:</strong> Positiva (>20 petéquias/quadrante)</p>
+                </div>
+                <div class="phase-item">
+                    <h3>DENGUE COM SINAIS DE ALARME (8% dos casos)</h3>
+                    <p><strong>Sinais críticos:</strong> Dor abdominal intensa, vômitos persistentes</p>
+                    <p><strong>Sangramento:</strong> Mucosas, teste torniquete positivo</p>
+                    <p><strong>Hepatomegalia:</strong> >2cm rebordo costal, letargia/irritabilidade</p>
+                </div>
+                <div class="phase-item">
+                    <h3>DENGUE GRAVE (2% dos casos)</h3>
+                    <p><strong>Choque:</strong> Extravasamento plasmático grave, hipotensão</p>
+                    <p><strong>Sangramento:</strong> Grave (hematemese, melena, metrorragia)</p>
+                    <p><strong>Disfunção orgânica:</strong> Hepatite grave, miocardite, encefalite</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>82.908</h3>
+                    <p>Casos graves Brasil 2024</p>
+                    <p>↑307,8% vs 2023</p>
+                </div>
+                <div class="stat-card">
+                    <h3>0,05-5%</h3>
+                    <p>Taxa mortalidade</p>
+                    <p>Dependente manejo clínico</p>
+                </div>
+                <div class="stat-card">
+                    <h3>3-7 dias</h3>
+                    <p>Período incubação</p>
+                    <p>Fase crítica: 4º-6º dia</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Ministério da Saúde do Brasil. The greatest Dengue epidemic in Brazil: Surveillance, Prevention, and Control. Rev Saude Publica. 2024.
+        </div>
+    </div>
+
+    <!-- SLIDE 15 - Zika: Neurotropismo e Teratogenia -->
+    <div class="slide disease-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>ZIKA: NEUROTROPISMO E SÍNDROME CONGÊNITA</h2>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>CARACTERÍSTICAS VIRAIS</h3>
+                    <p><strong>Genoma:</strong> RNA (+) 10,8kb</p>
+                    <p><strong>Linhagens:</strong> Africana, Asiática</p>
+                    <p><strong>Neurotropismo:</strong> Células neurais progenitoras</p>
+                    <p><strong>Persistência:</strong> SNC, testículos, placenta</p>
+                </div>
+                <div class="virus-card">
+                    <h3>SÍNDROME CONGÊNITA</h3>
+                    <p><strong>Microcefalia:</strong> >3.500 casos Brasil</p>
+                    <p><strong>Calcificações:</strong> Cerebrais, subcorticais</p>
+                    <p><strong>Deficiência:</strong> Intelectual, motora</p>
+                    <p><strong>Malformações:</strong> Oculares, auditivas</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>15%</h3>
+                    <p>Risco microcefalia</p>
+                    <p>1º trimestre gestação</p>
+                </div>
+                <div class="stat-card">
+                    <h3>5%</h3>
+                    <p>Risco microcefalia</p>
+                    <p>2º trimestre gestação</p>
+                </div>
+                <div class="stat-card">
+                    <h3>2%</h3>
+                    <p>Risco microcefalia</p>
+                    <p>3º trimestre gestação</p>
+                </div>
+                <div class="stat-card">
+                    <h3>20x</h3>
+                    <p>↑ Síndrome Guillain-Barré</p>
+                    <p>vs incidência basal</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Mecanismos de Neuroinvasão</h3>
+                <ul>
+                    <li><strong>Barreira hematoencefálica:</strong> Disfunção endotélio cerebral</li>
+                    <li><strong>Células progenitoras:</strong> Tropismo preferencial, apoptose</li>
+                    <li><strong>Neurânio olfatório:</strong> Via alternativa invasão SNC</li>
+                    <li><strong>Transplacentária:</strong> Células trofoblastos, circulação fetal</li>
+                </ul>
+            </div>
+            <div class="warning-box">
+                <p><strong>ALERTA GESTACIONAL:</strong> Maior risco no 1º trimestre. Transmissão sexual documentada por até 6 meses pós-infecção.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Comprehensive overview of the burden, prevention, and therapeutic aspects of arboviral diseases in India. Commun Med (Lond). 2025;5:254.
+        </div>
+    </div>
+
+    <!-- SLIDE 16 - Chikungunya: Artropatia Crônica -->
+    <div class="slide disease-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>CHIKUNGUNYA: ARTROPATIA E CRONIFICAÇÃO</h2>
+            <div class="phase-timeline">
+                <div class="phase-item">
+                    <h3>FASE AGUDA (0-14 dias)</h3>
+                    <p><strong>Início súbito:</strong> Febre 39-40°C, calafrios intensos</p>
+                    <p><strong>Artralgia:</strong> Simétrica, pequenas articulações (mãos, pés)</p>
+                    <p><strong>Edema articular:</strong> Punhos, tornozelos, dedos</p>
+                    <p><strong>Exantema:</strong> Máculo-papular, tronco → extremidades</p>
+                </div>
+                <div class="phase-item">
+                    <h3>FASE SUBAGUDA (15 dias - 3 meses)</h3>
+                    <p><strong>Persistência:</strong> Artralgia, rigidez matinal</p>
+                    <p><strong>Tenossinovite:</strong> Tendões flexores, dor ao movimento</p>
+                    <p><strong>Fadiga:</strong> Astenia persistente, limitação funcional</p>
+                </div>
+                <div class="phase-item">
+                    <h3>FASE CRÔNICA (>3 meses)</h3>
+                    <p><strong>Prevalência:</strong> 40-60% dos pacientes</p>
+                    <p><strong>Artrite persistente:</strong> Sinovite, destruição cartilagem</p>
+                    <p><strong>Incapacidade:</strong> Funcional significativa</p>
+                    <p><strong>Duração:</strong> Meses a anos</p>
+                </div>
+            </div>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>PATOGÊNESE ARTICULAR</h3>
+                    <p><strong>Tropismo:</strong> Sinoviócitos, células musculares</p>
+                    <p><strong>Persistência:</strong> RNA viral meses pós-infecção</p>
+                    <p><strong>Inflamação:</strong> IL-6, TNF-α elevados</p>
+                    <p><strong>Autoimunidade:</strong> Mimetismo molecular</p>
+                </div>
+                <div class="virus-card">
+                    <h3>FATORES DE RISCO CRONIFICAÇÃO</h3>
+                    <p><strong>Idade:</strong> >40 anos (↑ risco)</p>
+                    <p><strong>Sexo:</strong> Feminino (2:1)</p>
+                    <p><strong>Comorbidades:</strong> Artrite prévia, diabetes</p>
+                    <p><strong>Intensidade:</strong> Dor aguda severa</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <p><strong>ETIMOLOGIA:</strong> "Chikungunya" = "aquele que se curva" (língua Kimakonde, Tanzânia) devido à postura característica adotada pelos pacientes para aliviar a dor articular intensa.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Leon Juarez M, et al. Cellular, molecular and immunological aspects in arboviruses infection. Front Cell Infect Microbiol. 2022;12:973953.
+        </div>
+    </div>
+
+    <!-- SLIDE 17 - Febre Amarela: Dois Ciclos -->
+    <div class="slide disease-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>FEBRE AMARELA: CICLOS EPIDEMIOLÓGICOS DISTINTOS</h2>
+            <div class="virus-grid">
+                <div class="virus-card" style="border-left: 4px solid #27ae60;">
+                    <h3>🌳 CICLO SILVESTRE (Atual)</h3>
+                    <p><strong>Vetores:</strong> Haemagogus, Sabethes</p>
+                    <p><strong>Hospedeiros:</strong> Primatas não-humanos</p>
+                    <p><strong>Ambiente:</strong> Florestas, matas ciliares</p>
+                    <p><strong>Humanos:</strong> Hospedeiros acidentais</p>
+                    <p><strong>Casos:</strong> Esporádicos, ocupacionais</p>
+                </div>
+                <div class="virus-card" style="border-left: 4px solid #e74c3c;">
+                    <h3>🏙️ CICLO URBANO (Eliminado 1942)</h3>
+                    <p><strong>Vetor:</strong> Aedes aegypti exclusivo</p>
+                    <p><strong>Hospedeiros:</strong> Humanos exclusivos</p>
+                    <p><strong>Ambiente:</strong> Áreas urbanas densas</p>
+                    <p><strong>Transmissão:</strong> Antroponótica</p>
+                    <p><strong>Risco:</strong> Reintrodução possível</p>
+                </div>
+            </div>
+            <div class="phase-timeline">
+                <div class="phase-item">
+                    <h3>PERÍODO DE INFECÇÃO (Dias 1-3)</h3>
+                    <p><strong>Viremia:</strong> Alta carga viral circulante</p>
+                    <p><strong>Sintomas:</strong> Febre, cefaleia, mialgia, náuseas</p>
+                    <p><strong>Diagnóstico:</strong> RT-PCR positivo</p>
+                </div>
+                <div class="phase-item">
+                    <h3>PERÍODO DE REMISSÃO (Dias 4-5)</h3>
+                    <p><strong>Melhora aparente:</strong> Redução febre e sintomas</p>
+                    <p><strong>Duração:</strong> 24-48 horas típicas</p>
+                    <p><strong>Prognóstico:</strong> 85% recuperação completa</p>
+                </div>
+                <div class="phase-item">
+                    <h3>PERÍODO TOXÊMICO (Dias 6-15)</h3>
+                    <p><strong>Icterícia:</strong> Bilirrubina >3mg/dL</p>
+                    <p><strong>Hemorragias:</strong> Hematêmese, melena, epistaxe</p>
+                    <p><strong>Falência:</strong> Renal, hepática, cardiovascular</p>
+                    <p><strong>Mortalidade:</strong> 20-50% casos graves</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>4 óbitos</h3>
+                    <p>São Paulo 2024/2025</p>
+                </div>
+                <div class="stat-card">
+                    <h3>>95%</h3>
+                    <p>Eficácia vacina 17D</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Vitalícia</h3>
+                    <p>Imunidade pós-vacinal</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Centers for Disease Control and Prevention. Yellow Fever Vaccine Recommendations. MMWR. 2024. | MS Brasil. Situação epidemiológica da febre amarela. 2025.
+        </div>
+    </div>
+
+    <!-- SLIDE 18 - Oropouche: Arbovírus Emergente -->
+    <div class="slide disease-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>OROPOUCHE: NOVA AMEAÇA EMERGENTE GLOBAL</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>8.078</h3>
+                    <p>Casos confirmados Américas 2024</p>
+                </div>
+                <div class="stat-card">
+                    <h3>2.791</h3>
+                    <p>Casos Brasil 2025 (SE 01-04)</p>
+                </div>
+                <div class="stat-card">
+                    <h3>+74%</h3>
+                    <p>Crescimento vs 2024</p>
+                </div>
+                <div class="stat-card">
+                    <h3>2 óbitos</h3>
+                    <p>Primeiras mortes mundiais (BA)</p>
+                </div>
+            </div>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>CARACTERÍSTICAS VIRAIS</h3>
+                    <p><strong>Família:</strong> Peribunyaviridae</p>
+                    <p><strong>Genoma:</strong> RNA (-) tripartido</p>
+                    <p><strong>Descoberta:</strong> 1960, Belém-Brasília</p>
+                    <p><strong>Primeiro isolamento:</strong> Bicho-preguiça</p>
+                </div>
+                <div class="virus-card">
+                    <h3>VETOR PRINCIPAL</h3>
+                    <p><strong>Espécie:</strong> Culicoides paraensis</p>
+                    <p><strong>Nome popular:</strong> Maruim, mosquito-pólvora</p>
+                    <p><strong>Tamanho:</strong> 1-3mm (menor que Aedes)</p>
+                    <p><strong>Atividade:</strong> Crepuscular</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Expansão Geográfica Preocupante 2024-2025</h3>
+                <ul>
+                    <li><strong>Espírito Santo:</strong> 95% dos casos brasileiros (concentração epidêmica)</li>
+                    <li><strong>Rio de Janeiro:</strong> 99 casos (expansão Sudeste)</li>
+                    <li><strong>Minas Gerais:</strong> 30 casos (interiorização)</li>
+                    <li><strong>Transmissão vertical:</strong> Microcefalia e óbitos fetais documentados</li>
+                </ul>
+            </div>
+            <div class="warning-box">
+                <p><strong>MARCOS HISTÓRICOS 2024:</strong> Primeiras mortes por Oropouche no mundo + Confirmação transmissão vertical com malformações congênitas</p>
+            </div>
+            <div class="data-box">
+                <h3>Quadro Clínico</h3>
+                <p><strong>Sintomas:</strong> Similares dengue - febre, cefaleia intensa, mialgia, náuseas, diarreia</p>
+                <p><strong>Evolução grave:</strong> 4-5 dias do início → óbito | <strong>Complicações:</strong> Coagulopatia grave, envolvimento hepático</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Pan American Health Organization. Q&A -- Oropouche fever. 2024. | WHO. Oropouche virus disease - Region of the Americas. Disease Outbreak News. 2024.
+        </div>
+    </div>
+
+    <!-- SLIDES 19-30: DIAGNÓSTICO E EPIDEMIOLOGIA -->
+
+    <!-- SLIDE 19 - Diagnóstico Molecular -->
+    <div class="slide epidemio-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>DIAGNÓSTICO LABORATORIAL: ERA MOLECULAR</h2>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>RT-PCR TEMPO REAL</h3>
+                    <p><strong>Padrão ouro:</strong> Detecção RNA viral</p>
+                    <p><strong>Janela:</strong> 1-7 dias pós-sintomas</p>
+                    <p><strong>Especificidade:</strong> >99%</p>
+                    <p><strong>Quantificação:</strong> Carga viral (cópias/mL)</p>
+                    <p><strong>Diferenciação:</strong> Sorotipos específicos</p>
+                </div>
+                <div class="virus-card">
+                    <h3>ANTÍGENO NS1 (Dengue)</h3>
+                    <p><strong>Proteína:</strong> Não-estrutural solúvel</p>
+                    <p><strong>Janela:</strong> 1-9 dias pós-sintomas</p>
+                    <p><strong>Teste rápido:</strong> Disponível SUS</p>
+                    <p><strong>Correlação:</strong> Viremia e gravidade</p>
+                    <p><strong>Limitação:</strong> Específico para dengue</p>
+                </div>
+            </div>
+            <div class="comparison-table">
+                <tr>
+                    <th>MÉTODO</th>
+                    <th>JANELA DETECÇÃO</th>
+                    <th>ESPECIFICIDADE</th>
+                    <th>APLICAÇÃO</th>
+                </tr>
+                <tr>
+                    <td>RT-PCR</td>
+                    <td>1-7 dias</td>
+                    <td>>99%</td>
+                    <td>Diagnóstico definitivo</td>
+                </tr>
+                <tr>
+                    <td>NS1</td>
+                    <td>1-9 dias</td>
+                    <td>95-98%</td>
+                    <td>Triagem rápida</td>
+                </tr>
+                <tr>
+                    <td>IgM ELISA</td>
+                    <td>5-90 dias</td>
+                    <td>85-95%</td>
+                    <td>Infecção recente</td>
+                </tr>
+                <tr>
+                    <td>IgG ELISA</td>
+                    <td>>90 dias</td>
+                    <td>90-98%</td>
+                    <td>Infecção passada</td>
+                </tr>
+            </table>
+            <div class="data-box">
+                <h3>Inovações Diagnósticas 2024</h3>
+                <p><strong>RT-PCR Multiplex PAHO:</strong> Detecção simultânea Mayaro + Oropouche</p>
+                <p><strong>Sequenciamento genômico:</strong> Vigilância molecular em tempo real</p>
+                <p><strong>Teste POC:</strong> Point-of-care para áreas remotas</p>
+            </div>
+            <div class="warning-box">
+                <p><strong>DESAFIO DIAGNÓSTICO:</strong> Sintomas similares + reações cruzadas sorológicas + co-circulação viral = complexidade diagnóstica crescente</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Pan American Health Organization. Beyond Borders: Advancing Molecular Surveillance of Mayaro and Oropouche Arboviruses. 2024.
+        </div>
+    </div>
+
+    <!-- SLIDE 20 - Mudanças Climáticas -->
+    <div class="slide epidemio-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>MUDANÇAS CLIMÁTICAS: MOTOR DA EXPANSÃO</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>+1,1°C</h3>
+                    <p>Aumento temperatura global</p>
+                    <p>(1880-2020)</p>
+                </div>
+                <div class="stat-card">
+                    <h3>2-5°</h3>
+                    <p>Expansão zona tropical</p>
+                    <p>(latitude)</p>
+                </div>
+                <div class="stat-card">
+                    <h3>1 bilhão</h3>
+                    <p>Pessoas em risco adicional</p>
+                    <p>(projeção 2050)</p>
+                </div>
+                <div class="stat-card">
+                    <h3>2.000m</h3>
+                    <p>Novo limite altitudinal</p>
+                    <p>(vs 1.000m atual)</p>
+                </div>
+            </div>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>IMPACTOS OBSERVADOS</h3>
+                    <p>• Chuvas extremas mais frequentes</p>
+                    <p>• Secas → ↑ armazenamento água</p>
+                    <p>• Eventos climáticos extremos</p>
+                    <p>• Alteração padrões sazonais</p>
+                </div>
+                <div class="virus-card">
+                    <h3>EVIDÊNCIAS EUROPA</h3>
+                    <p>• Casos autóctones: França, Croácia, Itália</p>
+                    <p>• Aedes albopictus: 20+ países</p>
+                    <p>• Chikungunya local documentada</p>
+                    <p>• Expansão contínua para norte</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Fatores Climáticos Críticos</h3>
+                <ul>
+                    <li><strong>Temperatura ótima:</strong> 25-30°C = reprodução máxima do Aedes</li>
+                    <li><strong>Limite superior:</strong> >35°C = mortalidade vetorial elevada</li>
+                    <li><strong>Precipitação:</strong> Chuva + 3 dias calor = explosão populacional</li>
+                    <li><strong>Umidade:</strong> >60% = sobrevivência ideal do mosquito</li>
+                </ul>
+            </div>
+            <div class="data-box">
+                <h3>Projeções 2050</h3>
+                <p><strong>Expansão geográfica:</strong> Europa Sul, América Norte, Ásia Central</p>
+                <p><strong>População em risco:</strong> +1 bilhão pessoas adicionais</p>
+                <p><strong>Altitude:</strong> Estabelecimento até 2.000m (vs 1.000m atual)</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Climate Change and Arbovirus: A Review and Bibliometric Analysis. Climate. 2025;13(2):35.
+        </div>
+    </div>
+
+    <!-- SLIDE 21 - Urbanização -->
+    <div class="slide epidemio-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>URBANIZAÇÃO: AMPLIFICADOR DE TRANSMISSÃO</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>68%</h3>
+                    <p>População urbana mundial</p>
+                    <p>até 2050</p>
+                </div>
+                <div class="stat-card">
+                    <h3>+300%</h3>
+                    <p>Aumento criadouros</p>
+                    <p>áreas urbanas vs rurais</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Inversa</h3>
+                    <p>Correlação IDH</p>
+                    <p>vs incidência</p>
+                </div>
+                <div class="stat-card">
+                    <h3>89%</h3>
+                    <p>Municípios brasileiros</p>
+                    <p>com Aedes aegypti</p>
+                </div>
+            </div>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>FATORES URBANOS CRÍTICOS</h3>
+                    <p>• Densidade populacional elevada</p>
+                    <p>• Saneamento básico deficiente</p>
+                    <p>• Abastecimento água irregular</p>
+                    <p>• Gestão resíduos inadequada</p>
+                    <p>• Construção civil desordenada</p>
+                </div>
+                <div class="virus-card">
+                    <h3>CRIADOUROS ANTROPOGÊNICOS</h3>
+                    <p>• Lixo a céu aberto</p>
+                    <p>• Construções irregulares</p>
+                    <p>• Borracharias, ferro-velho</p>
+                    <p>• Cemitérios (vasos, pneus)</p>
+                    <p>• Obras abandonadas</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Determinantes Socioeconômicos</h3>
+                <ul>
+                    <li><strong>Renda:</strong> Baixa renda = maior risco de infecção</li>
+                    <li><strong>Educação:</strong> ↓ Escolaridade = ↓ práticas preventivas</li>
+                    <li><strong>Acesso saúde:</strong> Limitado = diagnóstico tardio</li>
+                    <li><strong>Trabalho informal:</strong> Sem licença = não isolamento</li>
+                    <li><strong>Habitação:</strong> Precária = mais criadouros</li>
+                </ul>
+            </div>
+            <div class="data-box">
+                <h3>Evidências Científicas</h3>
+                <p><strong>Correlação comprovada:</strong> IDH baixo = alta incidência arboviroses</p>
+                <p><strong>Desigualdade social:</strong> Amplifica intensidade dos surtos epidêmicos</p>
+                <p><strong>Vulnerabilidade:</strong> Populações periféricas mais expostas</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Ministério da Saúde do Brasil. Determinantes sociais e arboviroses: análise epidemiológica. Rev Saude Publica. 2024.
+        </div>
+    </div>
+
+    <!-- SLIDE 22 - Sazonalidade e IA -->
+    <div class="slide epidemio-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>SAZONALIDADE E MODELOS PREDITIVOS COM IA</h2>
+            <div class="timeline">
+                <div class="timeline-item" style="background: rgba(46, 204, 113, 0.3);">
+                    <h3>DEZ-JAN</h3>
+                    <p><strong>Início transmissão</strong></p>
+                    <p>Chuvas criam criadouros</p>
+                </div>
+                <div class="timeline-item" style="background: rgba(241, 196, 15, 0.3);">
+                    <h3>FEV-ABR</h3>
+                    <p><strong>Pico epidêmico</strong></p>
+                    <p>Calor + umidade ideais</p>
+                </div>
+                <div class="timeline-item" style="background: rgba(230, 126, 34, 0.3);">
+                    <h3>MAI-JUL</h3>
+                    <p><strong>Declínio</strong></p>
+                    <p>Temperaturas menores</p>
+                </div>
+                <div class="timeline-item" style="background: rgba(149, 165, 166, 0.3);">
+                    <h3>AGO-NOV</h3>
+                    <p><strong>Inter-epidêmico</strong></p>
+                    <p>Transmissão mínima</p>
+                </div>
+            </div>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>MODELOS PREDITIVOS IA</h3>
+                    <p><strong>Antecipação:</strong> 3-6 semanas</p>
+                    <p><strong>Acurácia:</strong> 85-92%</p>
+                    <p><strong>Integração:</strong> Clima + população + vetores</p>
+                    <p><strong>Alertas:</strong> Automáticos para autoridades</p>
+                </div>
+                <div class="virus-card">
+                    <h3>VARIÁVEIS PREDITIVAS</h3>
+                    <p><strong>Temperatura média:</strong> lag 4 semanas</p>
+                    <p><strong>Precipitação:</strong> lag 6-8 semanas</p>
+                    <p><strong>Umidade relativa:</strong> lag 2 semanas</p>
+                    <p><strong>Memória epidêmica:</strong> anos anteriores</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Sistema de Alerta Precoce</h3>
+                <div class="timeline">
+                    <div class="timeline-item" style="background: rgba(46, 204, 113, 0.4);">
+                        <h3>🟢 VERDE</h3>
+                        <p>Transmissão baixa</p>
+                    </div>
+                    <div class="timeline-item" style="background: rgba(241, 196, 15, 0.4);">
+                        <h3>🟡 AMARELO</h3>
+                        <p>Atenção</p>
+                    </div>
+                    <div class="timeline-item" style="background: rgba(230, 126, 34, 0.4);">
+                        <h3>🟠 LARANJA</h3>
+                        <p>Alerta</p>
+                    </div>
+                    <div class="timeline-item" style="background: rgba(231, 76, 60, 0.4);">
+                        <h3>🔴 VERMELHO</h3>
+                        <p>Emergência</p>
+                    </div>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Padrão Sazonal Brasileiro</h3>
+                <p><strong>Aumento até 300%:</strong> Casos no verão vs inverno</p>
+                <p><strong>Fórmula crítica:</strong> Período chuvoso + 3 dias calor consecutivo = explosão larval</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Artificial Intelligence in Arbovirus Surveillance: Predictive Models and Early Warning Systems. Nature Digital Medicine. 2024.
+        </div>
+    </div>
+
+    <!-- SLIDES 23-40: CONTROLE E PREVENÇÃO -->
+
+    <!-- SLIDE 23 - Tratamento Atual -->
+    <div class="slide control-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>MANEJO CLÍNICO: LIMITAÇÕES TERAPÊUTICAS ATUAIS</h2>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>PRINCÍPIOS FUNDAMENTAIS</h3>
+                    <p><strong>✅ Hidratação:</strong> 30-40mL/kg/dia</p>
+                    <p><strong>✅ Controle febril:</strong> Paracetamol 10-15mg/kg</p>
+                    <p><strong>✅ Monitoramento:</strong> Sinais de alarme</p>
+                    <p><strong>❌ Evitar:</strong> AAS, AINEs, corticoides</p>
+                </div>
+                <div class="virus-card">
+                    <h3>DENGUE GRAVE: PROTOCOLO</h3>
+                    <p><strong>1️⃣</strong> Reposição volêmica imediata</p>
+                    <p><strong>2️⃣</strong> Hematócrito controle 6/6h</p>
+                    <p><strong>3️⃣</strong> Plaquetas/coagulograma</p>
+                    <p><strong>4️⃣</strong> UTI se choque/sangramento</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>0</h3>
+                    <p>Antivirais específicos</p>
+                    <p>aprovados para uso</p>
+                </div>
+                <div class="stat-card">
+                    <h3>20%</h3>
+                    <p>Mortalidade dengue grave</p>
+                    <p>sem tratamento adequado</p>
+                </div>
+                <div class="stat-card">
+                    <h3>11.700</h3>
+                    <p>Profissionais capacitados</p>
+                    <p>Brasil 2023</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>Tratamento sintomático</p>
+                    <p>todas as arboviroses</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Lacunas Terapêuticas Críticas</h3>
+                <ul>
+                    <li><strong>Antivirais:</strong> Nenhum aprovado para uso clínico</li>
+                    <li><strong>Imunomoduladores:</strong> Pesquisa em estágios iniciais</li>
+                    <li><strong>Medicina personalizada:</strong> Biomarcadores em desenvolvimento</li>
+                    <li><strong>Terapias direcionadas:</strong> Baseadas em patogênese molecular</li>
+                </ul>
+            </div>
+            <div class="warning-box">
+                <p><strong>REALIDADE CLÍNICA:</strong> Manejo puramente sintomático e de suporte. Prevenção permanece como única estratégia eficaz disponível.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Cenci Dietrich V, et al. Pathogenesis and clinical management of arboviral diseases. World J Virol. 2025;14(1):100489.
+        </div>
+    </div>
+
+    <!-- SLIDE 24 - Controle Tradicional -->
+    <div class="slide control-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>CONTROLE VETORIAL: MÉTODOS ESTABELECIDOS</h2>
+            <div class="virus-grid">
+                <div class="virus-card" style="border-left: 5px solid #27ae60;">
+                    <h3>CONTROLE FÍSICO (Mais Eficaz)</h3>
+                    <p><strong>Eficácia:</strong> 70-90%</p>
+                    <p><strong>Métodos:</strong> Eliminação criadouros</p>
+                    <p><strong>Estratégia:</strong> Manejo ambiental integrado</p>
+                    <p><strong>Sustentabilidade:</strong> Educação comunitária</p>
+                    <p><strong>Custo:</strong> Baixo, alta relação custo-benefício</p>
+                </div>
+                <div class="virus-card" style="border-left: 5px solid #e74c3c;">
+                    <h3>CONTROLE QUÍMICO (Resistência ↑)</h3>
+                    <p><strong>Larvicidas:</strong> Temefós, BTI, Pyriproxyfen</p>
+                    <p><strong>Adulticidas:</strong> Malathion, Cipermetrina</p>
+                    <p><strong>Problema:</strong> 60% populações resistentes</p>
+                    <p><strong>Custo:</strong> R$ 3-5 bilhões anuais</p>
+                    <p><strong>Ambiente:</strong> Impacto significativo</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>110.000 kg</h3>
+                    <p>Larvicidas + adulticidas</p>
+                    <p>adquiridos MS 2024-2025</p>
+                </div>
+                <div class="stat-card">
+                    <h3>60%</h3>
+                    <p>Populações Aedes</p>
+                    <p>resistentes a inseticidas</p>
+                </div>
+                <div class="stat-card">
+                    <h3>10 min</h3>
+                    <p>Tempo semanal necessário</p>
+                    <p>eliminação criadouros</p>
+                </div>
+                <div class="stat-card">
+                    <h3>R$ 3-5 bi</h3>
+                    <p>Custo anual Brasil</p>
+                    <p>controle químico</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Limitações Críticas do Controle Atual</h3>
+                <ul>
+                    <li><strong>Resistência exponencial:</strong> Mutações em genes alvo dos inseticidas</li>
+                    <li><strong>Custo crescente:</strong> Necessidade doses maiores, produtos mais caros</li>
+                    <li><strong>Impacto ambiental:</strong> Contaminação solo, água, organismos não-alvo</li>
+                    <li><strong>Eficácia decrescente:</strong> Redução temporal da efetividade</li>
+                </ul>
+            </div>
+            <div class="success-box">
+                <p><strong>ESTRATÉGIA MAIS EFICAZ:</strong> Controle físico através da mobilização comunitária para eliminação de criadouros - 10 minutos semanais por domicílio</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Ministério da Saúde do Brasil. Com previsão de aumento de casos, Ministério da Saúde coordena ações de enfrentamento das arboviroses. 2023.
+        </div>
+    </div>
+
+    <!-- SLIDE 25 - Método Wolbachia -->
+    <div class="slide control-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>MÉTODO WOLBACHIA: REVOLUÇÃO BIOTECNOLÓGICA</h2>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>MECANISMO DE AÇÃO</h3>
+                    <p><strong>Bactéria:</strong> Wolbachia pipientis endossimbionte</p>
+                    <p><strong>Bloqueio viral:</strong> 96% redução competência vetorial</p>
+                    <p><strong>Mecanismos:</strong> Competição por recursos, modulação imune</p>
+                    <p><strong>Transmissão:</strong> Maternal, invasão populacional</p>
+                </div>
+                <div class="virus-card">
+                    <h3>IMPLEMENTAÇÃO BRASIL</h3>
+                    <p><strong>Expansão 2024-2025:</strong></p>
+                    <p>• Natal, Uberlândia, Presidente Prudente</p>
+                    <p>• Londrina, Foz do Iguaçu, Joinville</p>
+                    <p><strong>Já implementadas:</strong></p>
+                    <p>• Campo Grande, Petrolina, Belo Horizonte</p>
+                    <p>• Niterói, Rio de Janeiro</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>96%</h3>
+                    <p>Redução competência vetorial</p>
+                    <p>dengue, Zika, chikungunya</p>
+                </div>
+                <div class="stat-card">
+                    <h3>77%</h3>
+                    <p>Redução incidência dengue</p>
+                    <p>ensaio Indonésia</p>
+                </div>
+                <div class="stat-card">
+                    <h3>12</h3>
+                    <p>Cidades brasileiras</p>
+                    <p>com implementação</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Sustentável</h3>
+                    <p>Autorreplicação</p>
+                    <p>na população</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Outras Inovações Biotecnológicas</h3>
+                <ul>
+                    <li><strong>Mosquitos transgênicos (Oxitec):</strong> Redução populacional através de letalidade condicionada</li>
+                    <li><strong>Técnica Inseto Estéril (SIT):</strong> Esterilização por radiação, liberação machos estéreis</li>
+                    <li><strong>RNA interferente (dsRNA):</strong> Silenciamento genes essenciais reprodução</li>
+                    <li><strong>Gene drive:</strong> Modificação genética hereditária forçada</li>
+                </ul>
+            </div>
+            <div class="success-box">
+                <p><strong>EVIDÊNCIA ROBUSTA:</strong> Ensaio clínico randomizado na Indonésia demonstrou 77% de redução na incidência de dengue (n=8.144 participantes)</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> World Mosquito Program. Wolbachia method effectiveness in Indonesia: randomized controlled trial results. Nature. 2024. | MS Brasil. Método Wolbachia expansion. 2025.
+        </div>
+    </div>
+
+    <!-- SLIDE 26 - Vigilância Digital COE -->
+    <div class="slide control-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>VIGILÂNCIA EPIDEMIOLÓGICA: ERA DIGITAL</h2>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>COE DENGUE (Ativado 09/01/2025)</h3>
+                    <p><strong>Função:</strong> Centro Operações Emergência</p>
+                    <p><strong>Monitoramento:</strong> Tempo real nacional</p>
+                    <p><strong>Coordenação:</strong> Federal, estadual, municipal</p>
+                    <p><strong>Resposta:</strong> Rápida a surtos emergentes</p>
+                </div>
+                <div class="virus-card">
+                    <h3>SALA NACIONAL ARBOVIROSES (SNA)</h3>
+                    <p><strong>Dashboard:</strong> Integrado tempo real</p>
+                    <p><strong>Alertas:</strong> Automáticos por algoritmos</p>
+                    <p><strong>Georreferenciamento:</strong> Casos em mapas</p>
+                    <p><strong>Laboratórios:</strong> Integração nacional</p>
+                </div>
+            </div>
+            <div class="innovation-grid">
+                <div class="innovation-card">
+                    <h3>SENSORIAMENTO REMOTO</h3>
+                    <p>• Satélites climáticos</p>
+                    <p>• Detecção criadouros</p>
+                    <p>• Monitoramento vegetação</p>
+                    <p>• Índices ambientais</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>INTELIGÊNCIA ARTIFICIAL</h3>
+                    <p>• Modelos preditivos</p>
+                    <p>• Machine learning</p>
+                    <p>• Análise big data</p>
+                    <p>• Alertas automáticos</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>SEQUENCIAMENTO GENÔMICO</h3>
+                    <p>• Vigilância molecular</p>
+                    <p>• Rastreamento linhagens</p>
+                    <p>• Resistência vetorial</p>
+                    <p>• Evolução viral</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>VIGILÂNCIA ENTOMOLÓGICA</h3>
+                    <p>• Armadilhas inteligentes</p>
+                    <p>• Sensores IoT</p>
+                    <p>• Contagem automática</p>
+                    <p>• Identificação espécies</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Inovações Tecnológicas 2024-2025</h3>
+                <p><strong>Apps comunitários:</strong> Notificação cidadã de casos suspeitos</p>
+                <p><strong>Drones mapeamento:</strong> Identificação aérea de criadouros em larga escala</p>
+                <p><strong>Blockchain:</strong> Rastreabilidade cadeia frio vacinas e medicamentos</p>
+                <p><strong>One Health:</strong> Integração dados humanos, animais, ambientais</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Ministério da Saúde do Brasil. Sala Nacional de Arboviroses: tecnologia a serviço da saúde pública. 2025. | Digital surveillance systems for arboviruses. Lancet Digital Health. 2024.
+        </div>
+    </div>
+
+    <!-- SLIDE 27 - Vacinas Panorama -->
+    <div class="slide control-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>VACINAS: REALIDADE E PERSPECTIVAS</h2>
+            <div class="virus-grid">
+                <div class="virus-card" style="border-left: 5px solid #27ae60;">
+                    <h3>✅ DISPONÍVEIS</h3>
+                    <p><strong>Febre Amarela (17D):</strong></p>
+                    <p>• Eficácia >95%</p>
+                    <p>• Dose única, imunidade vitalícia</p>
+                    <p>• Obrigatória áreas de risco</p>
+                    <p><strong>Dengue (Qdenga - Takeda):</strong></p>
+                    <p>• Aprovada Anvisa 2023</p>
+                    <p>• Tetravalente, 2 doses, ≥4 anos</p>
+                </div>
+                <div class="virus-card" style="border-left: 5px solid #e74c3c;">
+                    <h3>❌ NÃO DISPONÍVEIS</h3>
+                    <p><strong>Zika:</strong> 5 candidatos Fase I/II</p>
+                    <p><strong>Chikungunya:</strong> 2 candidatos Fase III</p>
+                    <p><strong>Oropouche:</strong> Pesquisa inicial</p>
+                    <p><strong>Mayaro:</strong> Desenvolvimento pré-clínico</p>
+                </div>
+            </div>
+            <div class="comparison-table">
+                <tr>
+                    <th>DOENÇA</th>
+                    <th>STATUS</th>
+                    <th>EFICÁCIA</th>
+                    <th>DISPONIBILIDADE</th>
+                </tr>
+                <tr>
+                    <td>Febre Amarela</td>
+                    <td>Aprovada</td>
+                    <td>>95%</td>
+                    <td>SUS - universal</td>
+                </tr>
+                <tr>
+                    <td>Dengue</td>
+                    <td>Aprovada</td>
+                    <td>80,2%</td>
+                    <td>Privada - Anvisa</td>
+                </tr>
+                <tr>
+                    <td>Zika</td>
+                    <td>Fase I-II</td>
+                    <td>Em teste</td>
+                    <td>Não disponível</td>
+                </tr>
+                <tr>
+                    <td>Chikungunya</td>
+                    <td>Fase III</td>
+                    <td>Em teste</td>
+                    <td>Não disponível</td>
+                </tr>
+            </table>
+            <div class="data-box">
+                <h3>Plataformas Tecnológicas em Desenvolvimento</h3>
+                <ul>
+                    <li><strong>Vírus vivo atenuado:</strong> Tecnologia tradicional, imunogenicidade alta</li>
+                    <li><strong>Subunidades proteicas:</strong> Segurança elevada, múltiplas doses</li>
+                    <li><strong>mRNA:</strong> Tecnologia pós-COVID, desenvolvimento rápido</li>
+                    <li><strong>Vetores virais:</strong> Adenovírus, alta resposta imune</li>
+                    <li><strong>DNA/RNA:</strong> Tecnologia emergente, estabilidade térmica</li>
+                </ul>
+            </div>
+            <div class="warning-box">
+                <p><strong>DESAFIO ÚNICO:</strong> Necessidade de vacinas tetravalentes (dengue) e proteção cruzada entre arbovírus para efetividade populacional</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Anvisa. Aprovação vacina dengue Qdenga. Resolução RDC 2023. | WHO. Vaccine development pipeline arboviruses. Vaccine. 2024.
+        </div>
+    </div>
+
+    <!-- SLIDE 28 - Iniciativa Global OMS -->
+    <div class="slide control-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>INICIATIVA GLOBAL ARBOVÍRUS OMS (2022)</h2>
+            <div class="innovation-grid">
+                <div class="innovation-card">
+                    <h3>1️⃣ MONITORAR RISCO</h3>
+                    <p>• Sistema alerta precoce</p>
+                    <p>• Vigilância molecular</p>
+                    <p>• Modelagem preditiva</p>
+                    <p>• Análise tendências globais</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>2️⃣ REDUZIR RISCO LOCAL</h3>
+                    <p>• Capacitação técnica</p>
+                    <p>• Resposta rápida surtos</p>
+                    <p>• Fortalecimento laboratórios</p>
+                    <p>• Comunicação de risco</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>3️⃣ FORTALECER CONTROLE</h3>
+                    <p>• Gestão integrada vetores</p>
+                    <p>• Tecnologias inovadoras</p>
+                    <p>• Resistência inseticidas</p>
+                    <p>• Sustentabilidade ambiental</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>4️⃣ PREVENIR PANDEMIAS</h3>
+                    <p>• Preparação emergências</p>
+                    <p>• Stockpile estratégico</p>
+                    <p>• Protocolos internacionais</p>
+                    <p>• Coordenação global</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>5️⃣ MELHORAR INOVAÇÃO</h3>
+                    <p>• P&D acelerado</p>
+                    <p>• Parcerias público-privadas</p>
+                    <p>• Regulação harmonizada</p>
+                    <p>• Transferência tecnológica</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>6️⃣ CONSTRUIR COALIZÃO</h3>
+                    <p>• Parceiros estratégicos</p>
+                    <p>• Financiamento sustentável</p>
+                    <p>• Advocacy político</p>
+                    <p>• Engajamento comunidades</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>US$ 2,5 bi</h3>
+                    <p>Investimento global</p>
+                    <p>2022-2030</p>
+                </div>
+                <div class="stat-card">
+                    <h3>US$ 500 mi</h3>
+                    <p>P&D vacinas</p>
+                    <p>e tratamentos</p>
+                </div>
+                <div class="stat-card">
+                    <h3>15+</h3>
+                    <p>Parceiros estratégicos</p>
+                    <p>internacionais</p>
+                </div>
+                <div class="stat-card">
+                    <h3>120+</h3>
+                    <p>Países participantes</p>
+                    <p>da iniciativa</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Parceiros Estratégicos Principais</h3>
+                <p><strong>Instituições:</strong> CDC-EUA, Institut Pasteur, FIND, Wellcome Trust, Fundação Rockefeller</p>
+                <p><strong>Acadêmicas:</strong> London School Hygiene & Tropical Medicine, IHME</p>
+                <p><strong>Organizações:</strong> DNDi, GIZ, Agência Nacional Ambiente Singapura</p>
+            </div>
+            <div class="warning-box">
+                <p><strong>RISCO PANDÊMICO:</strong> Arbovírus identificados como próxima ameaça global emergente com potencial de causar pandemia internacional</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> World Health Organization. Global Arbovirus Initiative. Geneva: WHO; 2022. Disponível em: https://www.who.int/initiatives/global-arbovirus-initiative
+        </div>
+    </div>
+
+    <!-- SLIDE 29 - Inovações Futuras -->
+    <div class="slide future-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>PERSPECTIVAS FUTURAS: INOVAÇÕES EMERGENTES</h2>
+            <div class="innovation-grid">
+                <div class="innovation-card">
+                    <h3>DIAGNÓSTICO AVANÇADO</h3>
+                    <p>• Testes point-of-care</p>
+                    <p>• Sequenciamento tempo real</p>
+                    <p>• IA diagnóstico diferencial</p>
+                    <p>• Biossensores portáteis</p>
+                    <p>• Multiplexing viral</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>TRATAMENTOS DIRECIONADOS</h3>
+                    <p>• Antivirais amplo espectro</p>
+                    <p>• Imunoterapias personalizadas</p>
+                    <p>• Medicina de precisão</p>
+                    <p>• Biomarcadores prognósticos</p>
+                    <p>• Terapia celular</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>CONTROLE VETORIAL 4.0</h3>
+                    <p>• Gene drive sistemas</p>
+                    <p>• Nanotecnologia larvicida</p>
+                    <p>• Robótica swarm</p>
+                    <p>• Biocontrole otimizado</p>
+                    <p>• Feromônios sintéticos</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>VIGILÂNCIA INTEGRADA</h3>
+                    <p>• Satélites alta resolução</p>
+                    <p>• IoT environmental</p>
+                    <p>• Blockchain transparência</p>
+                    <p>• Digital twins epidêmicos</p>
+                    <p>• Realidade aumentada</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>VACINAS PRÓXIMA GERAÇÃO</h3>
+                    <p>• mRNA multivalentes</p>
+                    <p>• Nanopartículas direcionadas</p>
+                    <p>• Adjuvantes inteligentes</p>
+                    <p>• Vacinas mucosais</p>
+                    <p>• Imunidade esterilizante</p>
+                </div>
+                <div class="innovation-card">
+                    <h3>ONE HEALTH DIGITAL</h3>
+                    <p>• Integração dados massivos</p>
+                    <p>• Modelagem multissetorial</p>
+                    <p>• Interoperabilidade sistemas</p>
+                    <p>• Inteligência coletiva</p>
+                    <p>• Sustentabilidade planetária</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Cronograma de Implementação Esperado</h3>
+                <p><strong>2025-2027:</strong> Testes POC, antivirais Fase II, Wolbachia escala</p>
+                <p><strong>2027-2030:</strong> Vacinas Zika/Chiku, gene drive piloto, IA preditiva</p>
+                <p><strong>2030-2035:</strong> Medicina personalizada, controle integrado, eliminação local</p>
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> Future innovations in arbovirus control: roadmap 2025-2035. Nature Reviews Microbiology. 2024. | WHO R&D Blueprint priority pathogens. 2025.
+        </div>
+    </div>
+
+    <!-- SLIDE 30 - Ação Individual e Coletiva -->
+    <div class="slide future-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>AÇÃO INDIVIDUAL E COLETIVA: 10 MINUTOS QUE SALVAM VIDAS</h2>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>CHECKLIST DOMICILIAR SEMANAL</h3>
+                    <div class="checklist">
+                        <p>☐ Vasos/pratinhos: areiar ou remover (1 min)</p>
+                        <p>☐ Caixas d'água: verificar tampa hermética (2 min)</p>
+                        <p>☐ Calhas/lajes: limpar desobstruir (3 min)</p>
+                        <p>☐ Lixo: ensacar e descartar adequadamente (2 min)</p>
+                        <p>☐ Pneus/recipientes: verificar e drenar (2 min)</p>
+                        <p><strong>TOTAL: 10 MINUTOS SEMANAIS</strong></p>
+                    </div>
+                </div>
+                <div class="virus-card">
+                    <h3>PROTEÇÃO INDIVIDUAL</h3>
+                    <p><strong>Repelentes:</strong> DEET, Icaridina conforme bula</p>
+                    <p><strong>Roupas:</strong> Compridas e claras</p>
+                    <p><strong>Horários críticos:</strong> 6h-10h, 15h-19h</p>
+                    <p><strong>Ambiente:</strong> Telas portas/janelas</p>
+                    <p><strong>Viagens:</strong> Consultar áreas de risco</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>1 CASA</h3>
+                    <p>100m raio proteção</p>
+                    <p>Impacto familiar direto</p>
+                </div>
+                <div class="stat-card">
+                    <h3>1 QUARTEIRÃO</h3>
+                    <p>70% redução casos</p>
+                    <p>Proteção comunitária</p>
+                </div>
+                <div class="stat-card">
+                    <h3>1 BAIRRO</h3>
+                    <p>Eliminação transmissão</p>
+                    <p>Impacto populacional</p>
+                </div>
+                <div class="stat-card">
+                    <h3>1 CIDADE</h3>
+                    <p>Controle epidêmico</p>
+                    <p>Saúde pública efetiva</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Engajamento Digital e Social</h3>
+                <p><strong>Hashtags:</strong> #CombateAedes #10MinutosPelaVida #ArboviroseZero #VigilânciaComunitária</p>
+                <p><strong>Apps:</strong> Participação cidadã na vigilância epidemiológica</p>
+                <p><strong>Redes sociais:</strong> Disseminação conhecimento científico</p>
+                <p><strong>Educação:</strong> Multiplicadores em escolas e comunidades</p>
+            </div>
+            <div class="success-box">
+                <p style="font-size: 1.4em;"><strong>META OMS 2030:</strong> Redução de 75% na mortalidade por arboviroses através da combinação de inovação tecnológica e ação comunitária sustentada</p>
+            </div>
+            <div class="highlight" style="margin-top: 20px; font-size: 1.5em; padding: 15px;">
+                SUA AÇÃO HOJE = BRASIL PROTEGIDO AMANHÃ
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Referência:</strong> WHO Global Arbovirus Initiative. Community engagement strategies. 2024. | MS Brasil. Mobilização social no controle de arboviroses. 2025.
+        </div>
+    </div>
+
+    <!-- SLIDE 31 - Conclusões e Agradecimentos -->
+    <div class="slide future-slides">
+        <div class="logo">Microbiologia e Imunologia - 2025</div>
+        <div class="slide-content">
+            <h2>CONCLUSÕES E PERSPECTIVAS</h2>
+            <div class="data-box">
+                <h3>Pontos-Chave da Apresentação</h3>
+                <ul>
+                    <li><strong>Emergência Global:</strong> Arboviroses representam ameaça crescente à saúde mundial</li>
+                    <li><strong>Vetor Único:</strong> Aedes aegypti transmite 4 vírus simultaneamente</li>
+                    <li><strong>Inovação Necessária:</strong> Tecnologias avançadas complementam métodos tradicionais</li>
+                    <li><strong>Ação Coletiva:</strong> Controle efetivo requer participação comunitária</li>
+                    <li><strong>Vigilância Avançada:</strong> IA e sistemas digitais transformam monitoramento</li>
+                </ul>
+            </div>
+            <div class="virus-grid">
+                <div class="virus-card">
+                    <h3>PRIORIDADES IMEDIATAS</h3>
+                    <p>• Fortalecimento vigilância epidemiológica</p>
+                    <p>• Desenvolvimento vacinas eficazes</p>
+                    <p>• Controle vetorial inovador</p>
+                    <p>• Capacitação profissional contínua</p>
+                    <p>• Cooperação internacional</p>
+                </div>
+                <div class="virus-card">
+                    <h3>VISÃO 2030</h3>
+                    <p>• Redução 75% mortalidade</p>
+                    <p>• Controle sustentável vetores</p>
+                    <p>• Vacinas para todos arbovírus</p>
+                    <p>• Vigilância global integrada</p>
+                    <p>• Preparação pandêmica</p>
+                </div>
+            </div>
+            <div class="data-box">
+                <h3>Agradecimentos</h3>
+                <p><strong>Orientação:</strong> Prof. [Nome do Professor] - Disciplina Microbiologia e Imunologia</p>
+                <p><strong>Fontes:</strong> Ministério da Saúde, OMS, PAHO, Literatura científica peer-reviewed</p>
+                <p><strong>Instituição:</strong> [Nome da Universidade] - 2025</p>
+            </div>
+            <div class="success-box">
+                <p><strong>MENSAGEM FINAL:</strong> O controle das arboviroses é um desafio complexo que requer abordagem científica rigorosa, inovação tecnológica contínua e engajamento social sustentado. Cada um de nós é peça fundamental nesta estratégia global de saúde pública.</p>
+            </div>
+            <div class="highlight" style="margin-top: 25px; font-size: 1.4em;">
+                OBRIGADO PELA ATENÇÃO!
+            </div>
+        </div>
+        <div class="footer">
+            <strong>Apresentação elaborada com base em evidências científicas atualizadas - Janeiro 2025</strong> | <strong>Disciplina:</strong> Microbiologia e Imunologia
+        </div>
+    </div>
+
+    <div class="slide-counter">
+        <span id="current-slide">1</span> / <span id="total-slides">31</span>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" onclick="previousSlide()">◀ Anterior</button>
+        <button class="nav-btn" onclick="nextSlide()">Próximo ▶</button>
+        <button class="nav-btn" onclick="toggleFullscreen()">Tela Cheia</button>
+        <button class="nav-btn" onclick="toggleAutoPlay()">Auto Play</button>
+        <button class="nav-btn" onclick="jumpToSlide()">Ir para...</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        let autoPlayInterval = null;
+        let isAutoPlay = false;
+
+        document.getElementById('total-slides').textContent = totalSlides;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function previousSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function jumpToSlide() {
+            const slideNumber = prompt(`Ir para qual slide? (1-${totalSlides})`);
+            const targetSlide = parseInt(slideNumber);
+            if (targetSlide >= 1 && targetSlide <= totalSlides) {
+                showSlide(targetSlide - 1);
+            }
+        }
+
+        function toggleFullscreen() {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            } else {
+                document.documentElement.requestFullscreen();
+            }
+        }
+
+        function toggleAutoPlay() {
+            if (isAutoPlay) {
+                clearInterval(autoPlayInterval);
+                isAutoPlay = false;
+                document.querySelector('.nav-btn:nth-child(4)').textContent = 'Auto Play';
+            } else {
+                autoPlayInterval = setInterval(nextSlide, 20000); // 20 segundos por slide
+                isAutoPlay = true;
+                document.querySelector('.nav-btn:nth-child(4)').textContent = 'Parar Auto';
+            }
+        }
+
+        function goHome() {
+            showSlide(0);
+        }
+
+        // Adiciona os botões de navegação flutuante ao corpo do documento
+        document.body.insertAdjacentHTML('beforeend', `
+            <div class="floating-nav">
+                <button class="float-btn home-btn" onclick="goHome()" title="Ir para primeira slide">
+                    <span>🏠</span>
+                </button>
+                <button class="float-btn prev-btn" onclick="previousSlide()" title="Slide anterior">
+                    <span>◀️</span>
+                </button>
+                <button class="float-btn next-btn" onclick="nextSlide()" title="Próximo slide">
+                    <span>▶️</span>
+                </button>
+            </div>
+        `);
+
+        // Função para ajustar automaticamente o conteúdo
+        function adjustSlideContent() {
+            const currentSlideContent = slides[currentSlide].querySelector('.slide-content');
+            if (!currentSlideContent) return;
+
+            // Reset transformations
+            currentSlideContent.style.transform = 'none';
+            currentSlideContent.style.marginTop = '0';
+
+            const slideHeight = slides[currentSlide].clientHeight;
+            const contentHeight = currentSlideContent.scrollHeight;
+            const availableHeight = slideHeight - 80;
+            let scale = Math.min(1, availableHeight / contentHeight);
+
+            // Ajusta a escala mínima para garantir legibilidade
+            scale = Math.max(scale, 0.65);
+
+            // Aplica a transformação
+            currentSlideContent.style.transform = `scale(${scale})`;
+
+            // Calcula e aplica margem para centralização
+            const scaledHeight = contentHeight * scale;
+            const marginTop = Math.max(0, (availableHeight - scaledHeight) / 2);
+            currentSlideContent.style.marginTop = `${marginTop}px`;
+
+            // Ajusta grids
+            const grids = currentSlideContent.querySelectorAll('.virus-grid, .stats-grid, .innovation-grid');
+            grids.forEach(grid => {
+                const availableWidth = grid.parentElement.offsetWidth * scale;
+                const columns = Math.max(1, Math.min(3, Math.floor(availableWidth / 300)));
+                grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+            });
+
+            // Ajusta altura dos cards para evitar sobreposição
+            const cards = currentSlideContent.querySelectorAll('.virus-card, .stat-card, .innovation-card');
+            cards.forEach(card => {
+                card.style.height = 'auto';
+            });
+        }
+
+        // Atualizar o redimensionamento quando mudar de slide
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+            adjustSlideContent();
+        }
+
+        // Observar mudanças de tamanho da janela
+        window.addEventListener('resize', adjustSlideContent);
+
+        // Ajustar inicialmente
+        window.addEventListener('load', function() {
+            showSlide(0);
+            adjustSlideContent();
+        });
+
+        // Navegação por teclado
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                previousSlide();
+            } else if (e.key === 'f' || e.key === 'F11') {
+                e.preventDefault();
+                toggleFullscreen();
+            } else if (e.key === 'a' || e.key === 'A') {
+                e.preventDefault();
+                toggleAutoPlay();
+            } else if (e.key >= '1' && e.key <= '9') {
+                e.preventDefault();
+                const slideNum = parseInt(e.key);
+                if (slideNum <= totalSlides) {
+                    showSlide(slideNum - 1);
+                }
+            }
+        });
+
+        // Navegação por touch (mobile)
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleTouch();
+        });
+
+        function handleTouch() {
+            if (touchEndX < touchStartX - 50) {
+                nextSlide(); // Swipe left
+            }
+            if (touchEndX > touchStartX + 50) {
+                previousSlide(); // Swipe right
+            }
+        }
+
+        // Pause auto-play quando usuário interagir
+        document.addEventListener('keydown', function() {
+            if (isAutoPlay) {
+                toggleAutoPlay();
+            }
+        });
+
+        // Atalhos de teclado
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Home') {
+                e.preventDefault();
+                showSlide(0);
+            } else if (e.key === 'End') {
+                e.preventDefault();
+                showSlide(totalSlides - 1);
+            }
+        });
+    </script>
+</body>
+</html>
